@@ -7,6 +7,8 @@
             </div>
         </div>
         <Stat/>
+        <Information/>
+        <VDO/>
     </div>
 </template>
 <style scoped>
@@ -24,11 +26,15 @@
 }
 </style>
 <script>
-const Stat = () => import('./stat.vue')
+const Stat = () => import('./components/stat.vue')
+const Information = () => import('./components/information.vue')
+const VDO = () => import('./components/vdo.vue')
 
 export default {
     components: {
-        Stat
+        Stat,
+        Information,
+        VDO
     }
 }
 </script>
