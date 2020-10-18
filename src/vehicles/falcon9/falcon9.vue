@@ -51,7 +51,6 @@ export default {
     },
     methods: {
         scrollHandler(event) {
-            this.scrollPos = window.scrollY
             var height = window.innerHeight / 5
             this.opacity = (height - window.scrollY) / height;
         }
