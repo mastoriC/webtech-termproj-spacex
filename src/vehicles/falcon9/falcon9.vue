@@ -44,13 +44,13 @@ export default {
         }
     },
     created() {
-        window.addEventListener("scroll", this.handler)
+        window.addEventListener("scroll", this.scrollHandler)
     },
     destroyed() {
-        window.removeEventListener("scroll", this.handler)
+        window.removeEventListener("scroll", this.scrollHandler)
     },
     methods: {
-        handler(event) {
+        scrollHandler(event) {
             this.scrollPos = window.scrollY
             var height = window.innerHeight / 5
             this.opacity = (height - window.scrollY) / height;
