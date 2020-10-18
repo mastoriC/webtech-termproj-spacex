@@ -3,7 +3,7 @@
             <div class="container py-5">
                 <div ref="bar" class="row mx-5" :style="`opacity:${opacity}`">
                     <div class="col text-center" v-for="stat in stats" :key="stat.index">
-                        <label class="number">{{stat.val}}</label>
+                        <label class="number">{{stat.cur}}</label>
                         <h5 class="text-uppercase mt-n4">{{stat.title}}</h5>
                     </div>
                 </div>
@@ -20,10 +20,11 @@ export default {
     data() {
         return {
             stats: [
-                {title: "Total Launches", val: 93},
-                {title: "Total Landings", val: 54},
-                {title: "Reflown Rockets", val: 39},
+                {title: "Total Launches", val: 93, cur: 0},
+                {title: "Total Landings", val: 54, cur: 0},
+                {title: "Reflown Rockets", val: 39, cur: 0},
             ],
+            switch: 0,
             offsetTop: 0,
             bottomLine: 0,
             opacity: 0
@@ -41,6 +42,20 @@ export default {
         this.bottomLine = bar.offsetTop + bar.offsetHeight
     },
     methods: {
+        statsIncreament() {
+            var delay = 1
+            var timer = setInterval(() => {
+                this.stats.forEach(stat => {
+                    if (stat.cur < stat.val) {
+                        stat.cur++
+                        delay++
+                    }
+                    if (this.stats[0].cur === this.stats[0].val) {
+                        clearInterval(timer)
+                    }
+                })
+            }, 10)
+        },
         scrollHandler() {
             var num = (window.scrollY + window.innerHeight) - this.offsetTop
             if (this.opacity < 1) {
@@ -48,6 +63,15 @@ export default {
             }
             if (num < 0) {
                 this.opacity = 0
+                this.switch = 0
+                this.stats.forEach(stat => {
+                    stat.cur = 0
+                })
+            }
+
+            if (this.switch === 0 && this.opacity !== 0) {
+                this.statsIncreament()
+                this.switch = 1
             }
         }
     }
