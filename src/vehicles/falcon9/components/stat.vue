@@ -25,6 +25,11 @@ export default {
                 {title: "Reflown Rockets", val: 39},
             ]
         }
+    },
+    methods: {
+        test() {
+            
+        }
     }
 }
 </script>
