@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="background vh-100">
-            <div class="text-uppercase middle-center text-center">
+            <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="display-2 font-weight-bold mb-2">Falcon 9</div>
                 <div>First Orbital Class Rocket capable of reflight</div>
             </div>
@@ -17,6 +17,7 @@
     background-position: center;
     background-size: auto 100%;
     color: #ffffff;
+    perspective: 4px;
 }
 .middle-center {
     position: absolute;
@@ -35,6 +36,25 @@ export default {
         Stat,
         Information,
         VDO
+    },
+    data() {
+        return {
+            opacity: 1,
+            scrollPos: window.scrollY
+        }
+    },
+    created() {
+        window.addEventListener("scroll", this.handler)
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handler)
+    },
+    methods: {
+        handler(event) {
+            this.scrollPos = window.scrollY
+            var height = window.innerHeight / 5
+            this.opacity = (height - window.scrollY) / height;
+        }
     }
 }
 </script>

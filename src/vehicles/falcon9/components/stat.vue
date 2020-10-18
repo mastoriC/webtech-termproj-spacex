@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-black">
-        <div class="container py-5">
-            <div class="row mx-5">
-                <div class="col text-center" v-for="stat in stats" :key="stat.index">
-                    <label class="number">{{stat.val}}</label>
-                    <h5 class="text-uppercase mt-n4">{{stat.title}}</h5>
+        <div class="bg-black">
+            <div class="container py-5">
+                <div class="row mx-5">
+                    <div class="col text-center" v-for="stat in stats" :key="stat.index">
+                        <label class="number">{{stat.val}}</label>
+                        <h5 class="text-uppercase mt-n4">{{stat.title}}</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </template>
 <style scoped>
 .number {
