@@ -8,7 +8,20 @@ Vue.use(Router)
 export const router = new Router({
     mode: "history",
     routes: [
-        {path: "/vehicles/falcon9", component: Falcon9, name: "Falcon9"},
+        {
+            name: "Falcon9",
+            path: "/vehicles/falcon9",
+            component: Falcon9,
+            meta: {
+                title: "SpaceX - Falcon 9"
+            }
+        },
         {path: "*", redirect: {name: "Falcon9"}}
     ]
+})
+
+/* Automatic change page title depend on route meta. */
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title
+    next()
 })
