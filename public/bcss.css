@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color: white;
+    background: black;
 }
 .bg-black {
     background: black;

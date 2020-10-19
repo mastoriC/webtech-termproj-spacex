@@ -43,25 +43,23 @@ export default {
     },
     methods: {
         statsIncreament() {
-            var delay = 1
             var timer = setInterval(() => {
                 this.stats.forEach(stat => {
                     if (stat.cur < stat.val) {
                         stat.cur++
-                        delay++
                     }
                     if (this.stats[0].cur === this.stats[0].val) {
                         clearInterval(timer)
                     }
                 })
-            }, 10)
+            }, 15)
         },
         scrollHandler() {
             var num = (window.scrollY + window.innerHeight) - this.offsetTop
             if (this.opacity < 1) {
                 this.opacity = (num / 1000) * (num / 100)
             }
-            if (num < 0) {
+            if (num < 0 || num > this.bottomLine) {
                 this.opacity = 0
                 this.switch = 0
                 this.stats.forEach(stat => {
