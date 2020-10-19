@@ -10,6 +10,7 @@
         <Information/>
         <VDO/>
         <Engine/>
+        <StaticIMG/>
     </div>
 </template>
 <style scoped>
@@ -32,13 +33,15 @@ const Stat = () => import('./components/stat.vue')
 const Information = () => import('./components/information.vue')
 const VDO = () => import('./components/vdo.vue')
 const Engine = () => import('./components/engine.vue')
+const StaticIMG = () => import('./components/staticImg.vue')
 
 export default {
     components: {
         Stat,
         Information,
         VDO,
-        Engine
+        Engine,
+        StaticIMG
     },
     data() {
         return {

@@ -1,12 +1,12 @@
 <template>
-    <div class="background vh-100 position-relative px-5">
-        <div class="col-5 middle">
+    <div class="background vh-100 position-relative px-5" :style="`backgroundImage: url(${getBg()})`">
+        <div class="col-5 pr-5 middle">
             <div class="text-uppercase">
                 <h5 class="font-weight-light mb-3">Engines</h5>
                 <div class="h1 font-weight-bold mb-5">Merlin</div>
                 <div class="font-weight-bold mb-4">
                     <span v-for="(e, i) in engines" :key="i">
-                        <span class="pointer" :class="(selected!=i)?`text-grey`:``" v-on:click="changeItem">{{e.title}}</span>
+                        <span class="pointer" :class="(selected!==i)?`text-grey`:``" v-on:click="changeItem(i)">{{e.title}}</span>
                         <span v-if="i === 0" class="mx-2 text-grey">|</span>
                     </span>
                 </div>
@@ -21,7 +21,6 @@
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/falcon-9/desktop/Merlin.webp");
     background-position: 50% 50%;
     background-size: auto 100%;
 }
@@ -48,7 +47,7 @@
 export default {
     data() {
         return {
-            selected: false,
+            selected: 0,
             engines: [
                 {
                     title: "Sea Level",
@@ -56,7 +55,8 @@ export default {
                     details: [
                         ["propellant","LOX / RP-1"],
                         ["thrust", "845 kN / 190,000 lbf"]
-                    ]
+                    ],
+                    bg: "https://www.spacex.com/static/images/falcon-9/desktop/Merlin.webp"
                 },
                 {
                     title: "Vacuum",
@@ -64,22 +64,26 @@ export default {
                     details: [
                         ["propellant","LOX / RP-1"],
                         ["thrust", "981 kN / 220,500 lbf"]
-                    ]
+                    ],
+                    bg: "https://www.spacex.com/static/images/falcon-9/desktop/MerlinVac.webp"
                 },
             ]
         }
     },
     methods: {
-        changeItem() {
-            this.selected = !this.selected
+        changeItem(index) {
+            if (this.selected !== index) {
+                this.selected = (this.selected === 0) ? 1 : 0;
+            }
         },
         getDesc() {
-            var i = (this.selected) ? 1 : 0;
-            return this.engines[i].desc
+            return this.engines[this.selected].desc
         },
         getDetails() {
-            var i = (this.selected) ? 1 : 0;
-            return this.engines[i].details
+            return this.engines[this.selected].details
+        },
+        getBg() {
+            return this.engines[this.selected].bg
         }
     }
 }
