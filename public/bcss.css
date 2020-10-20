@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@font-face {
+    font-family: "D-DIN";
+    src: url("./font/D-DIN.otf");
+}
+@font-face {
+    font-family: "D-DIN";
+    src: url("./font/D-DIN-Bold.otf");
+    font-weight: bold;
+}
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'D-DIN', sans-serif;
     color: white;
     background: black;
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="py-5">
-        <div class="d-flex justify-content-center small text-uppercase">
+        <div class="d-flex justify-content-center small text-uppercase condense">
             <div class="d-inline-block font-weight-light">SpaceX © 2020</div>
             <div class="d-inline-block ml-5 font-weight-bold" v-for="(l, i) in links" :key="i">
                 <a :href="l.link" target="_blank">{{l.title}}</a>
@@ -18,7 +18,7 @@ a:hover {
     opacity: .5;
 }
 .small {
-    font-size: x-small;
+    font-size: small;
 }
 </style>
 <script>

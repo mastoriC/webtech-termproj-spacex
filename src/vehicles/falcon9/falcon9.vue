@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="background vh-100">
+        <div class="background vh-100" :style="`background-position: 50% ${bgPos};`">
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
-                <div class="display-2 font-weight-bold mb-2 animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
-                <div class="animate__animated animate__fadeInUp animate__fast">First Orbital Class Rocket capable of reflight</div>
+                <div class="display-1 font-weight-bold mb-2 animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
+                <div class="h5 font-weight-lighter animate__animated animate__fadeInUp animate__fast">First Orbital Class Rocket capable of reflight</div>
             </div>
         </div>
         <Stat/>
@@ -17,7 +17,6 @@
 .background {
     background: url("https://www.spacex.com/static/images/backgrounds/f9_feature.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-size: auto 100%;
     perspective: 4px;
 }
@@ -46,7 +45,8 @@ export default {
     data() {
         return {
             opacity: 1,
-            scrollPos: window.scrollY
+            scrollPos: window.scrollY,
+            bgPos: "50%"
         }
     },
     created() {
@@ -59,6 +59,8 @@ export default {
         scrollHandler(event) {
             var height = window.innerHeight / 10
             this.opacity = (height - window.scrollY) / height;
+            this.bgPos = (window.scrollY / 4) + "px"
+            console.log(window.scrollY)
         }
     }
 }
