@@ -60,7 +60,6 @@ export default {
             var height = window.innerHeight / 10
             this.opacity = (height - window.scrollY) / height;
             this.bgPos = (window.scrollY / 4) + "px"
-            console.log(window.scrollY)
         }
     }
 }

@@ -1,7 +1,7 @@
 <template>
-    <div class="position-relative" style="height: 200vh">
+    <div class="position-relative" ref="bg" style="height: 200vh">
         <div class="background background-full vh-100">
-            <div class="background-sec background-full vh-100"></div>
+            <div class="background-sec background-full vh-100" :style="`opacity: ${op}`"></div>
         </div>
         <div class="px-5">
             <div class="col-5 text-box" style="z-index: 2">
@@ -37,3 +37,16 @@
     
 }
 </style>
+<script>
+export default {
+    data() {
+        return {
+            actHeight: 0
+        }
+    },
+    mounted() {
+        var bg = this.$refs.bg
+        this.actHeight = bg.scrollHeight
+    }
+}
+</script>
