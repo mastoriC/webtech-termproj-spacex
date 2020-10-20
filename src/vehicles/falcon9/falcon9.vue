@@ -56,9 +56,10 @@ export default {
     },
     methods: {
         scrollHandler(event) {
-            var height = window.innerHeight / 10
+            var height = window.innerHeight / 10;
             this.opacity = (height - window.scrollY) / height;
-            this.bgPos = (window.scrollY / 4) + "px"
+            this.bgPos = (window.scrollY / 4) + "px";
+            this.scrollPos = window.scrollY;
         }
     }
 }
