@@ -9,6 +9,7 @@
 <style scoped>
 .background {
     background: url("https://www.spacex.com/static/images/backgrounds/f9_video.webp");
+    background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     background-size: auto 100%;

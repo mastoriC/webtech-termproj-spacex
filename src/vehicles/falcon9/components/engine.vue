@@ -22,7 +22,7 @@
 <style scoped>
 .background {
     background-position: 50% 50%;
-    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 .middle {
     position: absolute;

@@ -13,9 +13,10 @@
 </template>
 <style scoped>
 .background {
-    background: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Lines_Desktop.webp");
+    background-image: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Lines_Desktop.webp");
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: auto 100vh;
     position: sticky;
     top: 0;
 }
@@ -29,9 +30,10 @@
 }
 
 .background-sec {
-    background: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Render_Desktop.webp");
+    background-image: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Render_Desktop.webp");
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: auto 100vh;
     position: relative;
     top: 0;
     

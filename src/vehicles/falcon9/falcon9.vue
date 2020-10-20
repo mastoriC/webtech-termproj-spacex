@@ -15,10 +15,9 @@
 </template>
 <style scoped>
 .background {
-    background: url("https://www.spacex.com/static/images/backgrounds/f9_feature.jpg");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/f9_feature.jpg");
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    perspective: 4px;
+    background-size: auto 100vh;
 }
 .middle-center {
     position: absolute;
