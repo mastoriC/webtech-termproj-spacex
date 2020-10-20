@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "global": "sudo npm install -g @vue/cli @vue/cli-service vue-template-compiler",
+    "global": "npm install -g @vue/cli @vue/cli-service vue-template-compiler",
     "start": "vue-cli-service serve"
   },
   "repository": {
