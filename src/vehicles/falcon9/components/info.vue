@@ -1,11 +1,13 @@
 <template>
     <div class="position-relative" ref="bg" style="height: 200vh">
         <div class="background background-full vh-100">
-            <div class="background-sec background-full vh-100" :style="`opacity: ${opacity}`"></div>
+            <div class="background-sec background-full vh-100 px-5" :style="`opacity: ${opacity}`">
+                <Overview/>
+            </div>
         </div>
         <div class="px-5">
-            <div class="col-5 text-box" style="z-index: 2">
-                <h5 class="text font-weight-light">Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.</h5>
+            <div class="col-5 text-box">
+                <h5 class="text">Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.</h5>
             </div>
         </div>
     </div>
@@ -28,7 +30,6 @@
 .text {
     line-height: 36px;
 }
-
 .background-sec {
     background-image: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Render_Desktop.webp");
     background-repeat: no-repeat;
@@ -36,20 +37,27 @@
     background-size: auto 100vh;
     position: relative;
     top: 0;
-    
 }
 </style>
 <script>
+const Overview = () => import('./infoOverview.vue')
 export default {
+    components: {
+        Overview
+    },
     data() {
         return {
             actHeight: 0,
-            opacity: 0
+            opacity: 0,
+            lastPos: window.scrollY
         }
     },
     mounted() {
         var bg = this.$refs.bg
         this.actHeight = bg.scrollHeight - (bg.scrollHeight * 0.1)
+        if (window.scrollY > this.actHeight) {
+            this.opacity = 1;
+        }
     },
     created() {
         window.addEventListener("scroll", this.scrollHandler)
@@ -59,11 +67,12 @@ export default {
     },
     methods: {
         scrollHandler() {
-            if (window.scrollY > this.actHeight && this.opacity < 1) {
-                this.opacity += 0.1;
-            } else if (this.opacity > 0) {
-                this.opacity -= 0.1;
+            if (window.scrollY > this.actHeight && this.opacity < 1 && this.lastPos <= window.scrollY) {
+                (this.opacity > 0.75) ? this.opacity = 1 : this.opacity += 0.075;
+            } else if (this.opacity > 0 && this.lastPos >= window.scrollY && window.scrollY <= this.actHeight) {
+                (this.opacity < 0.375) ? this.opacity = 0 : this.opacity -= 0.075;
             }
+            this.lastPos = window.scrollY
         }
     }
 }

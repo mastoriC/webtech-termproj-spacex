@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const Index = () => import('./index/index.vue')
 const Falcon9 = () => import('./vehicles/falcon9/falcon9.vue')
 
 Vue.use(Router)
@@ -9,6 +10,14 @@ export const router = new Router({
     mode: "history",
     routes: [
         {
+            name: "Index",
+            path: "/",
+            component: Index,
+            meta: {
+                title: "SpaceX"
+            }
+        },
+        {
             name: "Falcon9",
             path: "/vehicles/falcon9",
             component: Falcon9,
@@ -16,7 +25,7 @@ export const router = new Router({
                 title: "SpaceX - Falcon 9"
             }
         },
-        {path: "*", redirect: {name: "Falcon9"}}
+        {path: "*", redirect: "/"}
     ]
 })
 
