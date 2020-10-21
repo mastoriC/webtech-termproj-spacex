@@ -1,0 +1,15 @@
+.page-title {font-size: 3rem;}
+@media screen and (min-width: 768px) {
+    .page-title {font-size: 4rem;}
+}
+@media screen and (min-width: 992px) {
+    .page-title {font-size: 6rem;}
+}
+
+.page-subtitle {font-size: .75rem;}
+@media screen and (min-width: 768px) {
+    .page-subtitle {font-size: 1rem;}
+}
+@media screen and (min-width: 992px) {
+    .page-subtitle {font-size: 1.25rem;}
+}

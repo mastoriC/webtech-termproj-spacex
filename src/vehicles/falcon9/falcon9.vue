@@ -2,8 +2,8 @@
     <div>
         <div class="background vh-100" :style="`background-position: 50% ${bgPos};`">
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
-                <div class="page-title font-weight-bold mb-2 animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
-                <div class="h5 font-weight-lighter animate__animated animate__fadeInUp animate__fast">First Orbital Class Rocket capable of reflight</div>
+                <div class="page-title font-weight-bold animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
+                <div class="page-subtitle font-weight-lighter animate__animated animate__fadeInUp animate__fast">First Orbital Class Rocket capable of reflight</div>
             </div>
         </div>
         <Stat/>
@@ -13,6 +13,7 @@
         <StaticIMG/>
     </div>
 </template>
+<style src="../vhpgStyle.css"></style>
 <style scoped>
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/f9_feature.jpg");
@@ -24,6 +25,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 60%;
 }
 </style>
 <script>
