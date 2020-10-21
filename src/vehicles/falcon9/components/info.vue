@@ -54,7 +54,7 @@ export default {
     },
     mounted() {
         var bg = this.$refs.bg
-        this.actHeight = bg.scrollHeight - (bg.scrollHeight * 0.075)
+        this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screenX / 1000))
         if (window.scrollY > this.actHeight) {
             this.opacity = 1;
         }
@@ -70,7 +70,7 @@ export default {
             if (window.scrollY > this.actHeight && this.opacity < 1 && this.lastPos <= window.scrollY) {
                 (this.opacity > 0.75) ? this.opacity = 1 : this.opacity += 0.075;
             } else if (this.opacity > 0 && this.lastPos >= window.scrollY && window.scrollY <= this.actHeight) {
-                (this.opacity < 0.375) ? this.opacity = 0 : this.opacity -= 0.075;
+                (this.opacity < 0.5) ? this.opacity = 0 : this.opacity -= 0.075;
             }
             this.lastPos = window.scrollY
         }

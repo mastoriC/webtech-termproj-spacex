@@ -1,15 +1,16 @@
-.page-title {font-size: 3rem;}
+.vh-title {font-size: 3rem;}
+.vh-subtitle {font-size: 1rem;}
+.vh-stat-num {font-size: 3rem;}
+.vh-stat-title {font-size: 0.75rem;}
 @media screen and (min-width: 768px) {
-    .page-title {font-size: 4rem;}
+    .vh-title {font-size: 4rem;}
+    .vh-subtitle {font-size: 1rem;}
+    .vh-stat-num {font-size: 4rem;}
+    .vh-stat-title {font-size: 0.8rem;}
 }
 @media screen and (min-width: 992px) {
-    .page-title {font-size: 6rem;}
-}
-
-.page-subtitle {font-size: .75rem;}
-@media screen and (min-width: 768px) {
-    .page-subtitle {font-size: 1rem;}
-}
-@media screen and (min-width: 992px) {
-    .page-subtitle {font-size: 1.25rem;}
+    .vh-title {font-size: 6rem;}
+    .vh-subtitle {font-size: 1.25rem;}
+    .vh-stat-num {font-size: 8rem;}
+    .vh-stat-title {font-size: 1.4rem;}
 }

@@ -1,8 +1,8 @@
 <template>
-    <div class="py-5">
-        <div class="d-flex justify-content-center small text-uppercase condense">
-            <div class="d-inline-block font-weight-light">SpaceX © 2020</div>
-            <div class="d-inline-block ml-5 font-weight-bold" v-for="(l, i) in links" :key="i">
+    <div class="container text-center py-4 px-0">
+        <div class="small text-uppercase condense">
+            <div class="d-dynamic mb-2 mb-lg-auto mr-auto mr-lg-4 font-weight-light">SpaceX © 2020</div>
+            <div class="d-inline-block mx-3 mx-lg-4 font-weight-bold text-center py-1" v-for="(l, i) in links" :key="i">
                 <a :href="l.link" target="_blank">{{l.title}}</a>
             </div>
         </div>
@@ -20,6 +20,15 @@ a:hover {
 .small {
     font-size: small;
 }
+
+.d-dynamic {display: block;}
+@media screen and (min-width: 768px) {
+    .d-dynamic {display: block;}
+}
+@media screen and (min-width: 992px) {
+    .d-dynamic {display: inline-block;}
+}
+
 </style>
 <script>
 export default {

@@ -2,27 +2,22 @@
         <div class="bg-black">
             <div class="container py-5">
                 <div ref="bar" class="row mx-5" :style="`opacity:${opacity}`">
-                    <div class="col text-center" v-for="stat in stats" :key="stat.index">
-                        <label class="number">{{stat.cur}}</label>
-                        <h5 class="text-uppercase mt-n4">{{stat.title}}</h5>
+                    <div class="col-4 text-center" v-for="stat in stats" :key="stat.index">
+                        <label class="vh-stat-num mb-4">{{stat.cur}}</label>
+                        <h5 class="vh-stat-title text-uppercase mt-n4">{{stat.title}}</h5>
                     </div>
                 </div>
             </div>
         </div>
 </template>
-<style scoped>
-.number {
-    font-size: 8em;
-}
-</style>
 <script>
 export default {
     data() {
         return {
             stats: [
-                {title: "Total Launches", val: 93, cur: 0},
-                {title: "Total Landings", val: 54, cur: 0},
-                {title: "Reflown Rockets", val: 39, cur: 0},
+                {title: "Total Launches", val: 94, cur: 0},
+                {title: "Total Landings", val: 55, cur: 0},
+                {title: "Reflown Rockets", val: 40, cur: 0},
             ],
             switch: 0,
             offsetTop: 0,
