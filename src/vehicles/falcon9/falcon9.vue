@@ -2,7 +2,7 @@
     <div>
         <div class="background vh-100" :style="`background-position: 50% ${bgPos};`">
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
-                <div class="display-1 font-weight-bold mb-2 animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
+                <div class="page-title font-weight-bold mb-2 animate__animated animate__fadeInUp animate__fast">Falcon 9</div>
                 <div class="h5 font-weight-lighter animate__animated animate__fadeInUp animate__fast">First Orbital Class Rocket capable of reflight</div>
             </div>
         </div>
