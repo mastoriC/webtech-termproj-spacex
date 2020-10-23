@@ -17,3 +17,13 @@ body {
     background: black;
     color: white;
 }
+.text-grey {
+    color: grey
+}
+.pointer {
+    cursor: pointer;
+}
+.text {
+    font-weight: 300;
+    line-height: 30px;
+}

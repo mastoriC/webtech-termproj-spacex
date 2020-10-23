@@ -29,18 +29,8 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.text-grey {
-    color: grey
-}
-.pointer {
-    cursor: pointer;
-}
 .bottom-line {
     border-bottom: 1px solid grey;
-}
-.text {
-    font-weight: 300;
-    line-height: 30px;
 }
 </style>
 <script>

@@ -12,7 +12,7 @@
                     <FirstStg v-else-if="pageNumber===2" @clicked="changeSec"/>
                     <SecStg v-else-if="pageNumber===3"/>
                     <InterStg v-else-if="pageNumber===4"/>
-                    <Payload v-else-if="pageNumber===5"/>
+                    <Payload v-else-if="pageNumber===5" @clicked="changeSec"/>
                 </div>
                 <CarouselUI :curSelected="pageNumber" @clicked="changePg"/>
             </div>
