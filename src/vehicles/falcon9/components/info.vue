@@ -6,7 +6,7 @@
                 <div class="col-5 pr-5 info-box">
                     <Overview/>
                 </div>
-                <CarouselUI @clicked="changePg"/>
+                <CarouselUI :curSelected="pageNumber" @clicked="changePg"/>
             </div>
         </div>
         <div class="px-5">
@@ -49,7 +49,7 @@
 </style>
 <script>
 const Overview = () => import('./infoOverview.vue')
-const CarouselUI = () => import('./carouselUI.vue')
+const CarouselUI = () => import('./infoCarouselUI.vue')
 
 export default {
     components: {
@@ -103,6 +103,7 @@ export default {
                 (this.opacity > 0.75) ? this.opacity = 1 : this.opacity += 0.075;
             } else if (this.opacity > 0 && this.lastPos >= window.scrollY && window.scrollY <= this.actHeight) {
                 (this.opacity < 0.5) ? this.opacity = 0 : this.opacity -= 0.075;
+                (this.pageNumber > 1) ? this.pageNumber-- : 0;
             }
             this.lastPos = window.scrollY
         },
