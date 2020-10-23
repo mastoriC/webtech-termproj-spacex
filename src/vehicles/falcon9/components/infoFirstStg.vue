@@ -31,7 +31,7 @@
             <div class="mb-3">
                 Placed symmetrically around the base of the rocket, they are stowed at the base of the vehicle and deploy just prior to landing.
             </div>
-            <router-link to="/mission" tag="span" class="link">
+            <router-link to="/mission" tag="span" class="link font-weight-bold">
                 Learn more about SpaceX reusability
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ref="icon" @mouseover="addMargin()"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
             </router-link>
@@ -85,6 +85,7 @@ export default {
         changeItem(index) {
             if (this.selected !== index) {
                 this.selected = index;
+                this.$emit('clicked', index+1);
             }
         },
         addMargin() {

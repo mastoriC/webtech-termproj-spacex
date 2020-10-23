@@ -9,7 +9,7 @@
                         <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                     </div>
                     <Overview v-if="pageNumber===1"/>
-                    <FirstStg v-else-if="pageNumber===2"/>
+                    <FirstStg v-else-if="pageNumber===2" @clicked="changeSec"/>
                     <SecStg v-else-if="pageNumber===3"/>
                     <InterStg v-else-if="pageNumber===4"/>
                     <Payload v-else-if="pageNumber===5"/>
@@ -127,6 +127,10 @@ export default {
         },
         changePg(pid) {
             this.pageNumber = pid
+            this.secNumber = 1
+        },
+        changeSec(sid) {
+            this.secNumber = sid
         }
     }
 }
