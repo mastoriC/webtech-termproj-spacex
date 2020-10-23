@@ -32,7 +32,7 @@ export default {
     },
     methods: {
         changePg() {
-            console.log(this.selected)
+            this.$emit('clicked', this.selected)
         }
     }
 }
