@@ -1,5 +1,5 @@
 <template>
-    <div class="col-5 pr-5 info-box">
+    <div>
         <div class="text-uppercase mb-5">
             <h5 class="mb-3">Falcon 9</h5>
             <div class="h1 font-weight-bold">Overview</div>
@@ -19,11 +19,7 @@
     </div>
 </template>
 <style scoped>
-.info-box {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 .bottom-line {
     border-bottom: 1px solid #444;
 }

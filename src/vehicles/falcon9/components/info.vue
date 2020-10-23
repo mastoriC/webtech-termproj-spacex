@@ -3,7 +3,9 @@
         <div class="background background-full vh-100">
             <div class="background-sec background-full vh-100 mx-5"
             :style="`opacity: ${opacity}; background-image: url(${bgs[pageNumber-1][secNumber-1]})`">
-                <Overview/>
+                <div class="col-5 pr-5 info-box">
+                    <Overview/>
+                </div>
                 <CarouselUI @clicked="changePg"/>
             </div>
         </div>
@@ -38,6 +40,11 @@
     background-size: auto 100vh;
     position: relative;
     top: 0;
+}
+.info-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 </style>
 <script>
