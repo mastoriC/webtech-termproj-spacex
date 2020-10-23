@@ -4,7 +4,15 @@
             <div class="background-sec background-full vh-100 mx-5"
             :style="`opacity: ${opacity}; background-image: url(${bgs[pageNumber-1][secNumber-1]})`">
                 <div class="col-5 pr-5 info-box">
-                    <Overview/>
+                    <div class="text-uppercase mb-5">
+                        <h5 class="mb-3">Falcon 9</h5>
+                        <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
+                    </div>
+                    <Overview v-if="pageNumber===1"/>
+                    <FirstStg v-else-if="pageNumber===2"/>
+                    <SecStg v-else-if="pageNumber===3"/>
+                    <InterStg v-else-if="pageNumber===4"/>
+                    <Payload v-else-if="pageNumber===5"/>
                 </div>
                 <CarouselUI :curSelected="pageNumber" @clicked="changePg"/>
             </div>
@@ -49,11 +57,20 @@
 </style>
 <script>
 const Overview = () => import('./infoOverview.vue')
+const FirstStg = () => import('./infoFirstStg.vue')
+const SecStg = () => import('./infoSecStg.vue')
+const InterStg = () => import('./infoInterStg.vue')
+const Payload = () => import('./infoPayload.vue')
+
 const CarouselUI = () => import('./infoCarouselUI.vue')
 
 export default {
     components: {
         Overview,
+        FirstStg,
+        SecStg,
+        InterStg,
+        Payload,
         CarouselUI
     },
     data() {
@@ -63,6 +80,7 @@ export default {
             lastPos: window.scrollY,
             pageNumber: 1,
             secNumber: 1,
+            titles: ["Overview", "First Stage", "Second Stage", "Interstage", "Payload"],
             bgs: [
                 [
                     "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Render_Desktop.webp"

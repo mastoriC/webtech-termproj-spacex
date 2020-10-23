@@ -7,7 +7,7 @@
                 <div class="font-weight-bold mb-4">
                     <span v-for="(e, i) in engines" :key="i">
                         <span class="pointer" :class="(selected!==i)?`text-grey`:``" v-on:click="changeItem(i)">{{e.title}}</span>
-                        <span v-if="i === 0" class="mx-2 text-grey">|</span>
+                        <span v-if="i === 0" class="mx-2 text-grey font-weight-lighter">|</span>
                     </span>
                 </div>
             </div>

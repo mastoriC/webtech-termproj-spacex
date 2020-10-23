@@ -1,9 +1,5 @@
 <template>
     <div>
-        <div class="text-uppercase mb-5">
-            <h5 class="mb-3">Falcon 9</h5>
-            <div class="h1 font-weight-bold">Overview</div>
-        </div>
         <div class="row mx-auto py-3 text bottom-line" v-for="(s, key) in specs" :key="key">
             <div class="col pl-0 text-uppercase font-weight-bold">{{key}}</div>
             <div class="col pr-0 text-right">
