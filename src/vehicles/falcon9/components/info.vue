@@ -1,8 +1,9 @@
 <template>
     <div class="position-relative" ref="bg" style="height: 200vh">
         <div class="background background-full vh-100">
-            <div class="background-sec background-full vh-100 px-5" :style="`opacity: ${opacity}`">
+            <div class="background-sec background-full vh-100 mx-5" :style="`opacity: ${opacity}`">
                 <Overview/>
+                <CarouselUI/>
             </div>
         </div>
         <div class="px-5">
@@ -41,9 +42,12 @@
 </style>
 <script>
 const Overview = () => import('./infoOverview.vue')
+const CarouselUI = () => import('./carouselUI.vue')
+
 export default {
     components: {
-        Overview
+        Overview,
+        CarouselUI
     },
     data() {
         return {
