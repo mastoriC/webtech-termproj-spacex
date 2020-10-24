@@ -23,7 +23,7 @@ export const router = new Router({
         },
         {
             name: "Falcon9",
-            path: "/vehicles/falcon9",
+            path: "/vehicles/falcon-9",
             component: Falcon9,
             meta: {
                 title: "SpaceX - Falcon 9"
