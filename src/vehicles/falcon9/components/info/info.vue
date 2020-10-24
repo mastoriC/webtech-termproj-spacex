@@ -173,8 +173,7 @@ export default {
                     if (this.opacity >= 1 || !(window.scrollY >= this.actHeight)) {
                         clearInterval(increaseOpa)
                     }
-                })
-                clearInterval(decreaseOpa)
+                }, 1);
             } else if (this.opacity > 0 && this.lastPos >= window.scrollY && window.scrollY <= this.actHeight) {
                 decreaseOpa = setInterval(() => {
                     if (this.opacity > 0) {
@@ -183,8 +182,7 @@ export default {
                     if (this.opacity <= 0 || !(window.scrollY <= this.actHeight)) {
                         clearInterval(decreaseOpa)
                     }
-                })
-                clearInterval(increaseOpa)
+                }, 1);
                 (this.pageNumber > 1) ? this.pageNumber-- : 0;
             }
             this.lastPos = window.scrollY
