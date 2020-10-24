@@ -9,7 +9,7 @@
                     Making life multiplanetary
                 </div>
                 <div class="mt-4">
-                    <router-link tag="span" :to="{name: 'Demo2Mission'}" @mouseover="resetOrigin" class="d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative">
+                    <router-link tag="span" :to="{name: 'Demo2Mission'}" @mouseover="resetOrigin" class="button d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative">
                         <div class="on-hover"></div>
                         View Our NASA DEMO-2 Mission
                     </router-link>
@@ -30,6 +30,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+}
+.on-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform-origin: top center;
+    transform: scale3d(1,0,1);
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+}
+.button:hover .on-hover {
+    transform: scale3d(1,1,1);
+    transform-origin: bottom center;
 }
 </style>
 <script>
