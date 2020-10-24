@@ -1,8 +1,70 @@
 <template>
-    <div>
-        <div>
+    <div class="container text-center py-5">
+        <div class="tall-line"></div>
+        <div class="text-grey text">
             For information about our launch services, contact
-            <a href="mailto:sales@spacex.com">sales@spacex.com</a>
+            <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a>
+        </div>
+        <div class="my-5">
+            <a @mouseover="resetOrigin" v-for="(l, i) in links" :key="i" :href="l.url" target="_blank" class="d-block d-lg-inline-block btn-outline p-3 m-3 text-uppercase text-center font-weight-bold position-relative">
+                <div class="on-hover"></div>
+                {{l.title}}
+            </a>
         </div>
     </div>
 </template>
+<style scoped>
+:root {
+    --num: 0;
+}
+.text {
+    font-size: smaller;
+}
+.text-link {
+    color: white;
+    transition: .4s;
+}
+.text-link:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+.btn-outline {
+    border: 2px solid white;
+    border-collapse: collapse;
+    background: inherit;
+    color: inherit;
+    font-size: smaller;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .4s;
+    --num: 0;
+}
+.btn-outline:hover {
+    color: black;
+    --num: 1;
+}
+.on-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: calc(100% + 2px);
+    height: 100%;
+    transform: scaleY(var(--num));
+    transform-origin: bottom;
+    transition: .4s;
+    z-index: -1;
+}
+</style>
+<script>
+export default {
+    data() {
+        return {
+            links: [
+                {title: "Download User's Guide", url: "https://www.spacex.com/media/Falcon_Users_Guide_082020.pdf"},
+                {title: "Capabilities and Services", url: "https://www.spacex.com/media/Capabilities&Services.pdf"}
+            ],
+        }
+    }
+}
+</script>
