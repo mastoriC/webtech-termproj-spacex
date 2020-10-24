@@ -16,6 +16,12 @@
 .background {
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: auto 100vh;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 </style>
 <script>

@@ -29,11 +29,11 @@
 }
 </style>
 <script>
-const Stat = () => import('./components/stat.vue')
-const Information = () => import('./components/info.vue')
-const VDO = () => import('./components/vdo.vue')
-const Engine = () => import('./components/engine.vue')
-const StaticIMG = () => import('./components/staticImg.vue')
+const Stat = () => import('./components/stat/stat.vue')
+const Information = () => import('./components/info/info.vue')
+const VDO = () => import('./components/vdo/vdo.vue')
+const Engine = () => import('./components/engine/engine.vue')
+const StaticIMG = () => import('./components/staticImg/staticImg.vue')
 
 export default {
     components: {

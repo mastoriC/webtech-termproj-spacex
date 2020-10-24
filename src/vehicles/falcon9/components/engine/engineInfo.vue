@@ -18,11 +18,6 @@
     </div>
 </template>
 <style scoped>
-.middle {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .bottom-line {
     border-bottom: 1px solid grey;
 }

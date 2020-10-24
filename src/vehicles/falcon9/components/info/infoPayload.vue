@@ -62,7 +62,7 @@ export default {
         changeItem(index) {
             if (this.selected !== index) {
                 this.selected = index;
-                this.$emit('clicked', index+1);
+                this.$emit('selectSec', index+1);
             }
         },
     }

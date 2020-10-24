@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div ref="template">
         <div class="text-uppercase font-weight-bold mb-4">
             <span v-for="(title, i) in titles" :key="i">
                 <span class="pointer" :class="(selected!==i)?`text-grey`:``" v-on:click="changeItem(i)">{{title}}</span>
@@ -72,7 +72,7 @@ export default {
         changeItem(index) {
             if (this.selected !== index) {
                 this.selected = index;
-                this.$emit('clicked', index+1);
+                this.$emit('selectSec', index+1);
             }
         },
         addMargin() {

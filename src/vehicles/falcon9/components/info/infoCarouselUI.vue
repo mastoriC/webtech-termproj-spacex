@@ -45,7 +45,7 @@ export default {
     },
     methods: {
         changePg() {
-            this.$emit('clicked', this.selected)
+            this.$emit('selectPg', this.selected)
         }
     },
     watch: {

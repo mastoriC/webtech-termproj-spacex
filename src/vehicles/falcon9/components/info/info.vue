@@ -11,12 +11,12 @@
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                             </div>
                             <Overview v-if="pageNumber===1"/>
-                            <FirstStg v-else-if="pageNumber===2" @clicked="changeSec"/>
+                            <FirstStg v-else-if="pageNumber===2" @selectSec="changeSec"/>
                             <SecStg v-else-if="pageNumber===3"/>
                             <InterStg v-else-if="pageNumber===4"/>
-                            <Payload v-else-if="pageNumber===5" @clicked="changeSec"/>
+                            <Payload v-else-if="pageNumber===5" @selectSec="changeSec"/>
                         </div>
-                        <CarouselUI :curSelected="pageNumber" @clicked="changePg"/>
+                        <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
                 </div>
             </div>
@@ -36,14 +36,14 @@
                         <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                     </div>
                     <div class="float-right">
-                        <CarouselUI :curSelected="pageNumber" @clicked="changePg"/>
+                        <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
                 </div>
-                <Overview v-if="pageNumber===1"/>
-                <FirstStg v-else-if="pageNumber===2" @clicked="changeSec"/>
-                <SecStg v-else-if="pageNumber===3"/>
-                <InterStg v-else-if="pageNumber===4"/>
-                <Payload v-else-if="pageNumber===5" @clicked="changeSec"/>
+                <Overview v-if="pageNumber==1"/>
+                <FirstStg v-else-if="pageNumber==2" @selectSec="changeSec"/>
+                <SecStg v-else-if="pageNumber==3"/>
+                <InterStg v-else-if="pageNumber==4"/>
+                <Payload v-else-if="pageNumber==5" @selectSec="changeSec"/>
             </div>
         </div>
     </div>
