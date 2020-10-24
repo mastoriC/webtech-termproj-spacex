@@ -11,6 +11,7 @@
         <VDO/>
         <Engine/>
         <StaticIMG/>
+        <MoreInfo/>
     </div>
 </template>
 <style src="../vhpgStyle.css"></style>
@@ -34,6 +35,7 @@ const Information = () => import('./components/info/info.vue')
 const VDO = () => import('./components/vdo/vdo.vue')
 const Engine = () => import('./components/engine/engine.vue')
 const StaticIMG = () => import('./components/staticImg/staticImg.vue')
+const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
 
 export default {
     components: {
@@ -41,7 +43,8 @@ export default {
         Information,
         VDO,
         Engine,
-        StaticIMG
+        StaticIMG,
+        MoreInfo
     },
     data() {
         return {
