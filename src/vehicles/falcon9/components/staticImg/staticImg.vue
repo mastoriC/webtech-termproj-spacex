@@ -9,7 +9,7 @@
 .background {
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: auto 100vh;
+    background-size: 100vw auto;
 }
 </style>
 <script>
