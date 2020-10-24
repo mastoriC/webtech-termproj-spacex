@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="background vh-100 position-relative" :style="`background-image: url(${bgUrl})`">
+        <div class="embed-responsive embed-responsive-4by3 vh-100 position-relative">
+            <img class="embed-responsive-item" :src="bgUrl">
             <StaticCarousel class="px-3 px-lg-5 bg-black" :curSelected="curBgNum" @selectImg="changeImg"/>
         </div>
     </div>
