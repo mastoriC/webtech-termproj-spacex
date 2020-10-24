@@ -2,8 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Index = () => import('./index/index.vue')
+
 const Falcon9 = () => import('./vehicles/falcon9/falcon9.vue')
+
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
+const Demo2Mission = () => import('./updates/demo2/30-5-2020/demo2Mission.vue')
 
 Vue.use(Router)
 
@@ -32,6 +35,14 @@ export const router = new Router({
             component: HumanSpaceflight,
             meta: {
                 title: "SpaceX - Human Spaceflight"
+            }
+        },
+        {
+            name: "Demo2Mission",
+            path: "/updates/crew-demo-2-mission-update-5-30-2020/",
+            component: Demo2Mission,
+            meta: {
+                title: "SpaceX - Updates"
             }
         },
         {path: "*", redirect: "/"}

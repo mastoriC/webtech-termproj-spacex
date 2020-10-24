@@ -12,6 +12,7 @@
 <style scoped>
 a {
     color: inherit;
+    font-weight: bold;
     transition: .4s;
 }
 a:hover {
