@@ -22,7 +22,7 @@
             </div>
             <div class="px-xl-5">
                 <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-5 offset-xl-0 text-box">
-                    <span class="vh-text">
+                    <span class="dm-text">
                         Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
                     </span>
                 </div>

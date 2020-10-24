@@ -1,0 +1,19 @@
+.dm-title {font-size: 3rem;}
+.dm-subtitle {font-size: 1rem;}
+.dm-stat-num {font-size: 3rem;}
+.dm-stat-title {font-size: 0.75rem;}
+.dm-text {font-size: 1rem; line-height: 32px;}
+@media screen and (min-width: 768px) {
+    .dm-title {font-size: 4rem;}
+    .dm-subtitle {font-size: 1rem;}
+    .dm-stat-num {font-size: 4rem;}
+    .dm-stat-title {font-size: 0.8rem;}
+    .dm-text {font-size: 1rem; line-height: 32px;}
+}
+@media screen and (min-width: 992px) {
+    .dm-title {font-size: 6rem;}
+    .dm-subtitle {font-size: 1.25rem;}
+    .dm-stat-num {font-size: 8rem;}
+    .dm-stat-title {font-size: 1.4rem;}
+    .dm-text {font-size: 1.25rem;line-height: 36px;}
+}

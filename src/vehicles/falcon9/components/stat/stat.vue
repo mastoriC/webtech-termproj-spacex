@@ -3,8 +3,8 @@
             <div class="container py-5">
                 <div ref="bar" class="row mx-5" :style="`opacity:${opacity}`">
                     <div class="col-4 text-center" v-for="stat in stats" :key="stat.index">
-                        <label class="vh-stat-num mb-4">{{stat.cur}}</label>
-                        <h5 class="vh-stat-title text-uppercase mt-n4">{{stat.title}}</h5>
+                        <label class="dm-stat-num mb-4">{{stat.cur}}</label>
+                        <h5 class="dm-stat-title text-uppercase mt-n4">{{stat.title}}</h5>
                     </div>
                 </div>
             </div>
