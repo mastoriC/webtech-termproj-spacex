@@ -164,10 +164,27 @@ export default {
     },
     methods: {
         scrollHandler() {
+            var increaseOpa, decreaseOpa
             if (window.scrollY > this.actHeight && this.opacity < 1 && this.lastPos <= window.scrollY) {
-                (this.opacity > 0.75) ? this.opacity = 1 : this.opacity += 0.075;
+                increaseOpa = setInterval(() => {
+                    if (this.opacity < 1) {
+                        this.opacity += 0.005;
+                    }
+                    if (this.opacity >= 1 || !(window.scrollY >= this.actHeight)) {
+                        clearInterval(increaseOpa)
+                    }
+                })
+                clearInterval(decreaseOpa)
             } else if (this.opacity > 0 && this.lastPos >= window.scrollY && window.scrollY <= this.actHeight) {
-                (this.opacity < 0.5) ? this.opacity = 0 : this.opacity -= 0.075;
+                decreaseOpa = setInterval(() => {
+                    if (this.opacity > 0) {
+                        this.opacity -= 0.005;
+                    }
+                    if (this.opacity <= 0 || !(window.scrollY <= this.actHeight)) {
+                        clearInterval(decreaseOpa)
+                    }
+                })
+                clearInterval(increaseOpa)
                 (this.pageNumber > 1) ? this.pageNumber-- : 0;
             }
             this.lastPos = window.scrollY
