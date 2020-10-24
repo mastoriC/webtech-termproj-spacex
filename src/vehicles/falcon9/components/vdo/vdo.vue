@@ -2,7 +2,7 @@
     <div class="background vh-100 position-relative pointer">
         <div class="px-3 px-lg-5">
             <div class="col-12 col-lg-6 bottom-left text-uppercase text-shadow">
-                <div class="font-weight-light h6 m-0">Video</div>
+                <div class="font-weight-light h5 m-0">Video</div>
                 <div class="font-weight-bold dm-title-2">Falcon 9 In Flight</div>
             </div>
         </div>
