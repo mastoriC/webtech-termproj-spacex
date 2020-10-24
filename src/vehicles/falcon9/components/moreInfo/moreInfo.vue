@@ -17,6 +17,12 @@
 :root {
     --num: 0;
 }
+.tall-line {
+    width: 1px;
+    height: 140px;
+    margin: 0 auto 20px;
+    background: white;
+}
 .text {
     font-size: smaller;
 }
