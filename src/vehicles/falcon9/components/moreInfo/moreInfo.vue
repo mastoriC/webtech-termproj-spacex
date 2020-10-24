@@ -34,33 +34,6 @@
     color: #aaaaaa;
     text-decoration: none;
 }
-.btn-outline {
-    border: 2px solid white;
-    border-collapse: collapse;
-    background: inherit;
-    color: inherit;
-    font-size: smaller;
-    cursor: pointer;
-    text-decoration: none;
-    transition: .4s;
-    --num: 0;
-}
-.btn-outline:hover {
-    color: black;
-    --num: 1;
-}
-.on-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    width: calc(100% + 2px);
-    height: 100%;
-    transform: scaleY(var(--num));
-    transform-origin: bottom;
-    transition: .4s;
-    z-index: -1;
-}
 </style>
 <script>
 export default {
