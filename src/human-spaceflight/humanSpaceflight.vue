@@ -31,21 +31,6 @@
     transform: translate(-50%, -50%);
     width: 80%;
 }
-.on-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transform-origin: top center;
-    transform: scale3d(1,0,1);
-    transition: transform .6s cubic-bezier(.19,1,.22,1);
-}
-.button:hover .on-hover {
-    transform: scale3d(1,1,1);
-    transform-origin: bottom center;
-}
 </style>
 <script>
 const Quote = () => import('./components/quote.vue')
