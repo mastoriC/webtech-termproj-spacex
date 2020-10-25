@@ -1,10 +1,10 @@
 <template>
-  <div class="d-none">
+  <div class="nav-holder">
     <div class="header">
       <div class="navigation navbar navbar-expand position-relative">
         <Logo/>
         <ul class="navbar-nav">
-          <li class="nav-item text-uppercase font-weight-bold mt-3 p-3" v-for="(l, i) in links" :key="i">
+          <li class="nav-item text-uppercase font-weight-bold py-2 px-2 px-xl-3" v-for="(l, i) in links" :key="i">
             <router-link tag="span" :to="l.link" class="nav-link pointer position-relative p-0 text-white">
               {{ l.title }}
             </router-link>
@@ -16,14 +16,32 @@
   </div>
 </template>
 <style scoped>
+.nav-holder {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 .header {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -85px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.navigation {
+    height: 100%;
+}
+.navbar-nav {
+  position: absolute;
+  left: 285px;
+  top: 38px;
+  height: 30px;
+  display: flex;
+}
+.nav-item {
+  position: relative;
 }
 .nav-link {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 .nav-link::after {
   content: "";
@@ -41,6 +59,15 @@
   transition-duration: 0.4s;
   transform: scaleX(1);
   transform-origin: left center;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    height: 60px;
+  }
+  .navbar-nav {
+    display: none;
+  }
 }
 </style>
 <script>

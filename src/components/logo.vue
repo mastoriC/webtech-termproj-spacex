@@ -62,13 +62,30 @@
     </a>
 </template>
 <style scoped>
+#logo svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 #logo {
     top: 32px;
     left: 50px;
     width: 210px;
     height: auto;
+    position: absolute;
 }
 .fill-white {
     fill: white;
+}
+@media screen and (max-width: 992px) {
+    #logo {
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        margin-top: -5px;
+        margin-left: 15px;
+        transform: translate(-50%,-50%);
+        z-index: 55;
+    }
 }
 </style>
