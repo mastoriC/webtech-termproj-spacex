@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Index = () => import('./index/index.vue')
 
 const Falcon9 = () => import('./vehicles/falcon9/falcon9.vue')
+const FalconHeavy = () => import('./vehicles/falcon-heavy/falconHeavy.vue')
 
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
 const Demo2Mission = () => import('./updates/demo2/30-5-2020/demo2Mission.vue')
@@ -21,6 +22,8 @@ export const router = new Router({
                 title: "SpaceX"
             }
         },
+
+        /* Vehicles */
         {
             name: "Falcon9",
             path: "/vehicles/falcon9",
@@ -29,6 +32,15 @@ export const router = new Router({
                 title: "SpaceX - Falcon 9"
             }
         },
+        {
+            name: "FalconHeavy",
+            path: "/vehicles/falcon-heavy",
+            component: FalconHeavy,
+            meta: {
+                title: "SpaceX - Falcon Heavy"
+            }
+        },
+
         {
             name: "humanSpaceflight",
             path: "/human-spaceflight",
