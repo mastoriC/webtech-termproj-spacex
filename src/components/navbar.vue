@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-none">
     <div class="header">
       <div class="navigation navbar navbar-expand position-relative">
         <Logo/>
