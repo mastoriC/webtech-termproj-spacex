@@ -36,6 +36,9 @@ a, a:hover {
 .transition-4 {
     transition: .4s;
 }
+.overflow-hidden {
+    overflow: hidden
+}
 
 /* Button Style */
 .btn-outline {
