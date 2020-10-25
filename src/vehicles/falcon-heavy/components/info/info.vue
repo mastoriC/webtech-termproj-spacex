@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="position-relative" ref="bg" style="height: 200vh">
-            <div class="background background-full vh-100">
+            <div class="background background-full vh-100" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
                     <div v-if="!this.$isMobile">
@@ -50,17 +50,11 @@
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHFairings_Lines_Mobile.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100vh;
     position: sticky;
     top: 0;
-}
-@media screen and (min-width: 992px) {
-    .background {
-        background-image: url("https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHFairings_Lines_Desktop.webp");
-    }
 }
 .text-box {
     position: absolute;
@@ -108,6 +102,9 @@ export default {
             pageNumber: 1,
             secNumber: 1,
             titles: ["Overview", "First Stage", "Interstage", "Second Stage", "Payload"],
+            bgFirst: (this.$isMobile) ?
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHFairings_Lines_Mobile.webp":
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHFairings_Lines_Desktop.webp",
             bgs: JSON_bgs
         }
     },
