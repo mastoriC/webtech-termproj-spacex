@@ -14,9 +14,6 @@
     </div>
 </template>
 <style scoped>
-:root {
-    --num: 0;
-}
 .tall-line {
     width: 1px;
     height: 140px;
