@@ -15,9 +15,9 @@ export default {
     data() {
         return {
             stats: [
-                {title: "Total Launches", val: 94, cur: 0},
-                {title: "Total Landings", val: 55, cur: 0},
-                {title: "Reflown Rockets", val: 40, cur: 0},
+                {title: "Total Launches", val: 3, cur: 0},
+                {title: "Total Landings", val: 7, cur: 0},
+                {title: "Reflown Rockets", val: 4, cur: 0},
             ],
             switch: 0,
             offsetTop: 0,
@@ -55,7 +55,7 @@ export default {
                         clearInterval(timer)
                     }
                 })
-            }, 15)
+            }, 100)
         },
         scrollHandler() {
             var num = (window.scrollY + window.innerHeight) - this.offsetTop

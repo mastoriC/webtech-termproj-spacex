@@ -8,13 +8,12 @@
         </div>
         <div v-if="selected===0" class="text">
             <div class="mb-3">
-                Falcon 9’s first stage incorporates nine Merlin engines and aluminum-lithium alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant.
+                Three cores make up the first stage of Falcon Heavy. The side cores, or boosters, are connected on the nosecone, the interstage, and on the octaweb. Shortly after liftoff the center core engines are throttled down. After the side cores separate, the center core engines throttle back up to full thrust.
             </div>
-            <div>Falcon 9 generates more than 1.7 million pounds of thrust at sea level.</div>
         </div>
         <div v-else-if="selected===1" class="text">
             <div class="mb-4">
-                The nine Merlin engines on the first stage are gradually throttled near the end of first-stage flight to limit launch vehicle acceleration as the rocket’s mass decreases with the burning of fuel. These engines are also used to reorient the first stage prior to reentry and to decelerate the vehicle for landing.
+                Falcon Heavy’s first stage incorporates 27 Merlin engines across three aluminum-lithium alloy rocket cores containing liquid oxygen and rocket-grade kerosene (RP-1) propellant. Falcon Heavy generates more than 5 million pounds of thrust at liftoff.
             </div>
             <div class="row mx-auto bottom-line py-3" v-for="(e, i) in engines" :key="i">
                 <div class="col p-0 font-weight-bold text-uppercase">{{e.title}}</div>
@@ -26,14 +25,14 @@
         </div>
         <div v-else-if="selected===2" class="text">
             <div class="mb-3">
-                The Falcon 9 first stage is equipped with four landing legs made of state-of-the-art carbon fiber with aluminum honeycomb.
+                The Falcon Heavy first stage is equipped with 12 landing legs (4 on each booster) made of state-of-the-art carbon fiber with aluminum honeycomb.
             </div>
             <div class="mb-3">
-                Placed symmetrically around the base of the rocket, they are stowed at the base of the vehicle and deploy just prior to landing.
+                All 12 landing legs are stowed along the side of each booster until just prior to landing.
             </div>
             <router-link to="/mission" tag="span" class="link pointer font-weight-bold">
                 <span @mouseover="createSpace()" @mouseleave="removeSpace()">
-                    Learn more about SpaceX reusability
+                    Learn more about Falcon reusability
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right transition-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ref="icon"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
                 </span>
             </router-link>
@@ -57,15 +56,15 @@ export default {
             engines: [
                 {
                     title: "Number of Engines",
-                    value: 9
+                    value: 27
                 },
                 {
                     title: "Thrust at Sea Level",
-                    value: ["7,607", "1,710,000"]
+                    value: ["22,819", "5,130,000"]
                 },
                 {
                     title: "Thrust in Vacuum",
-                    value: ["8,227", "1,849,500"]
+                    value: ["24,681", "5,548,500"]
                 }
             ]
         }

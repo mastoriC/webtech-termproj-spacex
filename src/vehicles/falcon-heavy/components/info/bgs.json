@@ -1,0 +1,40 @@
+{
+    "desktop": [
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHFairings_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHS1_Render_Desktop.webp",
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHEngines_Render_Desktop.webp",
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHS1Legs_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHInterstage_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHS2_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHSoloFairings_Render_Desktop.webp"
+        ]
+    ],
+    "mobile": [
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHFairings_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHS1_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHEngines_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHS1Legs_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHInterstage_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHS2_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHSoloFairings_Render_Mobile.webp"
+        ]
+    ]
+}

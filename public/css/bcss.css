@@ -8,11 +8,13 @@
     font-weight: bold;
 }
 
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'D-DIN', sans-serif;
     color: white;
     background: black;
-    overflow-x: hidden;
 }
 a, a:hover {
     text-decoration: none;
@@ -30,6 +32,9 @@ a, a:hover {
 .text {
     font-weight: 300;
     line-height: 30px;
+}
+.transition-4 {
+    transition: .4s;
 }
 
 /* Button Style */

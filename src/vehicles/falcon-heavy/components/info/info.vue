@@ -7,23 +7,23 @@
                     <div v-if="!this.$isMobile">
                         <div class="col-5 mx-5 pr-5 info-box">
                             <div class="text-uppercase mb-5">
-                                <h5 class="mb-3">Falcon 9</h5>
+                                <h5 class="mb-3">Falcon Heavy</h5>
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                             </div>
                             <Overview v-if="pageNumber===1"/>
                             <FirstStg v-else-if="pageNumber===2" @selectSec="changeSec"/>
-                            <SecStg v-else-if="pageNumber===3"/>
-                            <InterStg v-else-if="pageNumber===4"/>
-                            <Payload v-else-if="pageNumber===5" @selectSec="changeSec"/>
+                            <InterStg v-else-if="pageNumber===3"/>
+                            <SecStg v-else-if="pageNumber===4"/>
+                            <Payload v-else-if="pageNumber===5"/>
                         </div>
                         <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
                 </div>
             </div>
-            <div class="px-lg-5">
-                <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-5 offset-lg-0 text-box">
+            <div class="px-xl-5">
+                <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-5 offset-xl-0 text-box">
                     <span class="dm-text">
-                        Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
+                        Falcon Heavy is the most powerful operational rocket in the world by a factor of two. With the ability to lift into orbit nearly 64 metric tons (141,000 lb) Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy. Falcon Heavy is composed of three Falcon 9 nine-engine cores whose 27 Merlin engines together generate more than 5 million pounds of thrust at liftoff, equal to approximately eighteen 747 aircraft.
                     </span>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="col-12">
                 <div class="mb-4">
                     <div class="text-uppercase d-inline-block">
-                        <h6 class="mb-0">Falcon 9</h6>
+                        <h6 class="mb-0">Falcon Heavy</h6>
                         <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                     </div>
                     <div class="float-right">
@@ -40,17 +40,17 @@
                     </div>
                 </div>
                 <Overview v-if="pageNumber==1"/>
-                <FirstStg v-else-if="pageNumber==2" @selectSec="changeSec"/>
-                <SecStg v-else-if="pageNumber==3"/>
-                <InterStg v-else-if="pageNumber==4"/>
-                <Payload v-else-if="pageNumber==5" @selectSec="changeSec"/>
+                <FirstStg v-else-if="pageNumber===2" @selectSec="changeSec"/>
+                <InterStg v-else-if="pageNumber===3"/>
+                <SecStg v-else-if="pageNumber===4"/>
+                <Payload v-else-if="pageNumber===5"/>
             </div>
         </div>
     </div>
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9Fairings_Lines_Mobile.webp");
+    background-image: url("https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHFairings_Lines_Mobile.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100vh;
@@ -59,7 +59,7 @@
 }
 @media screen and (min-width: 992px) {
     .background {
-        background-image: url("https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Lines_Desktop.webp");
+        background-image: url("https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHFairings_Lines_Desktop.webp");
     }
 }
 .text-box {
@@ -107,7 +107,7 @@ export default {
             lastPos: window.scrollY,
             pageNumber: 1,
             secNumber: 1,
-            titles: ["Overview", "First Stage", "Second Stage", "Interstage", "Payload"],
+            titles: ["Overview", "First Stage", "Interstage", "Second Stage", "Payload"],
             bgs: JSON_bgs
         }
     },

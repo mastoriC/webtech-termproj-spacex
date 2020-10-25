@@ -10,6 +10,8 @@
                 </div>
             </div>
         </div>
+        <Stat/>
+        <Information/>
     </div>
 </template>
 <style scoped>
@@ -27,7 +29,14 @@
 }
 </style>
 <script>
+const Stat = () => import('./components/stat/stat.vue')
+const Information = () => import('./components/info/info.vue')
+
 export default {
+    components: {
+        Stat,
+        Information,
+    },
     data() {
         return {
             opacity: 1,
