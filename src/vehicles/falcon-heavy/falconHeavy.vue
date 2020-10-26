@@ -12,6 +12,7 @@
         </div>
         <Stat/>
         <Information/>
+        <Engine/>
     </div>
 </template>
 <style scoped>
@@ -30,11 +31,13 @@
 <script>
 const Stat = () => import('./components/stat/stat.vue')
 const Information = () => import('./components/info/info.vue')
+const Engine = () => import('./components/engine/engine.vue')
 
 export default {
     components: {
         Stat,
         Information,
+        Engine
     },
     data() {
         return {
