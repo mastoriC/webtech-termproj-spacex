@@ -1,10 +1,10 @@
 @font-face {
     font-family: "D-DIN";
-    src: url("../font/D-DIN.otf");
+    src: url("../font/D-DIN.woff2");
 }
 @font-face {
     font-family: "D-DIN";
-    src: url("../font/D-DIN-Bold.otf");
+    src: url("../font/D-DIN-Bold.woff2");
     font-weight: bold;
 }
 
@@ -28,6 +28,12 @@ a, a:hover {
 }
 .pointer {
     cursor: pointer;
+}
+.event-none {
+    pointer-events: none;
+}
+.event-auto {
+    pointer-events: auto;
 }
 .text {
     font-weight: 300;

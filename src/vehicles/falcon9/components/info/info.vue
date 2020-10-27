@@ -16,7 +16,7 @@
                             <InterStg v-else-if="pageNumber===4"/>
                             <Payload v-else-if="pageNumber===5" @selectSec="changeSec"/>
                         </div>
-                        <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
+                        <CarouselUI :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
                 </div>
             </div>
