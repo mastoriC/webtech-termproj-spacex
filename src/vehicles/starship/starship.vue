@@ -3,24 +3,19 @@
         <div class="background vh-100" :style="`background-position: 50% ${bgPos}; background-size: auto ${bgSize};`">
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="dm-title font-weight-bold animate__animated animate__fadeInUp animate__fast">
-                    Falcon Heavy
+                    Starship
                 </div>
                 <div class="dm-subtitle font-weight-lighter animate__animated animate__fadeInUp animate__fast">
-                    The world’s most powerful rocket
+                    Service to Earth orbit, Moon, Mars and beyond
                 </div>
             </div>
         </div>
-        <Stat/>
-        <Information/>
         <Video/>
-        <Performance/>
-        <Engine/>
-        <MoreInfo/>
     </div>
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/backgrounds/fh_feature.webp");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/starship_feature.webp");
     background-repeat: no-repeat;
 }
 .middle-center {
@@ -32,21 +27,11 @@
 }
 </style>
 <script>
-const Stat = () => import('./components/stat/stat.vue')
-const Information = () => import('./components/info/info.vue')
 const Video = () => import('./components/vdo/vdo.vue')
-const Performance = () => import('./components/performance/performance.vue')
-const Engine = () => import('./components/engine/engine.vue')
-const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
 
 export default {
     components: {
-        Stat,
-        Information,
-        Video,
-        Performance,
-        Engine,
-        MoreInfo
+        Video
     },
     data() {
         return {

@@ -3,9 +3,9 @@
         <VDOplate :status="open" @closeTab="closeVDOTab" v-if="open"/>
         <div class="background vh-100 position-relative pointer">
             <div>
-                <div class="col-12 col-lg-4 bottom-left text-uppercase text-shadow pl-4 pl-lg-5">
+                <div class="col-12 col-lg-5 bottom-left text-uppercase text-shadow pl-4 pl-lg-5">
                     <div class="font-weight-light h5">Video</div>
-                    <div class="font-weight-bold line-height dm-title-2">Falcon 9 In Flight</div>
+                    <div class="font-weight-bold line-height dm-title-2">Falcon Heavy First Flight</div>
                 </div>
             </div>
             <div class="play-area" v-on:click="pushTab">
@@ -18,7 +18,7 @@
 </template>
 <style scoped>
 .background {
-    background: url("https://www.spacex.com/static/images/backgrounds/f9_video.webp");
+    background: url("https://www.spacex.com/static/images/backgrounds/fh_video.webp");
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
