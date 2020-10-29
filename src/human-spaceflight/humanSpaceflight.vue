@@ -9,7 +9,7 @@
                     Making life multiplanetary
                 </div>
                 <div class="mt-4">
-                    <router-link tag="span" :to="{name: 'Demo2Mission'}" @mouseover="resetOrigin" class="button d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative">
+                    <router-link tag="span" :to="{name: 'Demo2Mission'}" @mouseover="resetOrigin" class="button d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative" :class="(opacity>=1)?`event-auto`:`event-none`">
                         <div class="on-hover"></div>
                         View Our NASA DEMO-2 Mission
                     </router-link>
@@ -17,6 +17,8 @@
             </div>
         </div>
         <Quote/>
+        <MoreInfo/>
+        <Mission/>
     </div>
 </template>
 <style scoped>
@@ -33,11 +35,15 @@
 }
 </style>
 <script>
-const Quote = () => import('./components/quote.vue')
+const Quote = () => import('./components/quote/quote.vue')
+const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
+const Mission = () => import('./components/mission/mission.vue')
 
 export default {
     components: {
-        Quote
+        Quote,
+        MoreInfo,
+        Mission
     },
     data() {
         return {
