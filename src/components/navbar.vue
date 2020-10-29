@@ -123,8 +123,6 @@ export default {
                 menuBar.classList.add("animate__fadeOut");
                 menuBar.style.pointerEvents = "none"
             }
-
-            console.log(window.scrollY, this.posBuffer)
             this.posBuffer = window.scrollY;
         }
     }
