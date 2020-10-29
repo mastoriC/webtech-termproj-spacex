@@ -15,6 +15,7 @@
         <Video/>
         <Performance/>
         <Engine/>
+        <StaticImg/>
         <MoreInfo/>
     </div>
 </template>
@@ -37,6 +38,7 @@ const Information = () => import('./components/info/info.vue')
 const Video = () => import('./components/vdo/vdo.vue')
 const Performance = () => import('./components/performance/performance.vue')
 const Engine = () => import('./components/engine/engine.vue')
+const StaticImg = () => import('./components/staticImg/staticImg.vue')
 const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
 
 export default {
@@ -46,6 +48,7 @@ export default {
         Video,
         Performance,
         Engine,
+        StaticImg,
         MoreInfo
     },
     data() {
