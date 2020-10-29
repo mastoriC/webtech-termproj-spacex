@@ -17,8 +17,8 @@
             </div>
         </div>
         <Quote/>
-        <MoreInfo/>
         <Mission/>
+        <MoreInfo/>
     </div>
 </template>
 <style scoped>
@@ -28,7 +28,7 @@
 }
 .middle-center {
     position: absolute;
-    top: 40%;
+    top: 43.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
