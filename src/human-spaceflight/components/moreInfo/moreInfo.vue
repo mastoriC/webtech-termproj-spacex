@@ -6,7 +6,7 @@
             <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a>
         </div>
         <div class="my-3">
-            <a v-for="(l, i) in links" :key="i" :href="l.url" target="_blank" class="d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative">
+            <a v-for="(l, i) in links" :key="i" :href="l.url" target="_blank" class="d-block d-md-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative">
                 <div class="on-hover"></div>
                 {{l.title}}
             </a>

@@ -1,27 +1,23 @@
 <template>
     <div>
-        <MissionLeft/>
-        <MissionRight/>
+        <div v-for="(page, index) in missions" :key="index">
+            <Mission :info="page" :index="index"/>
+        </div>
     </div>
 </template>
 <script>
-const MissionLeft = () => import('./misL.vue')
-const MissionRight = () => import('./misR.vue')
+const Mission = () => import('./missionInfo.vue')
 
 import JSON_missions from './data.json'
 
 export default {
     components: {
-        MissionLeft,
-        MissionRight
+        Mission
     },
     data() {
         return {
             missions: JSON_missions
         }
-    },
-    created() {
-        console.log(JSON_missions)
     }
 }
 </script>
