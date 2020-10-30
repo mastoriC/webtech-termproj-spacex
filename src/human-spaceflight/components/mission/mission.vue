@@ -1,12 +1,12 @@
 <template>
     <div>
         <div v-for="(page, index) in missions" :key="index">
-            <Mission :info="page" :index="index"/>
+            <MissionInfo :info="page" :index="index"/>
         </div>
     </div>
 </template>
 <script>
-const Mission = () => import('./missionInfo.vue')
+const MissionInfo = () => import('./missionInfo.vue')
 
 import JSON_missions from './data.json'
 
