@@ -11,6 +11,7 @@
             </div>
         </div>
         <Video/>
+        <Engine/>
     </div>
 </template>
 <style scoped>
@@ -28,10 +29,12 @@
 </style>
 <script>
 const Video = () => import('./components/vdo/vdo.vue')
+const Engine = () => import('./components/engine/engine.vue')
 
 export default {
     components: {
-        Video
+        Video,
+        Engine
     },
     data() {
         return {
