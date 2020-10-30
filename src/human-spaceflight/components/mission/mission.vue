@@ -12,7 +12,7 @@ import JSON_missions from './data.json'
 
 export default {
     components: {
-        Mission
+        MissionInfo
     },
     data() {
         return {
