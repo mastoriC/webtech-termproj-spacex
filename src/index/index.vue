@@ -9,7 +9,7 @@
 </template>
 <script>
 const Starlink = () => import('./components/starlink.vue')
-const CrewDemo = () => import('./components/crewDragon.vue')
+const CrewDemo = () => import('./components/crewDemo.vue')
 const Simulator = () => import('./components/simulator.vue')
 const Starship = () => import('./components/starship.vue')
 const Lunar = () => import('./components/lunar.vue')
