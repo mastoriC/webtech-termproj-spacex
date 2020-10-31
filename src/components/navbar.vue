@@ -246,6 +246,10 @@
     .nav-holder .hamburger {
         margin-top: 0;
     }
+    
+    .menu .navbar-nav {
+        top: 50px;
+    }
 
     .menu .nav-item.primary {
         display: block;
