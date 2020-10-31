@@ -11,7 +11,9 @@
             </div>
         </div>
         <Video/>
+        <Landing/>
         <Engine/>
+        <PrivateLunar/>
     </div>
 </template>
 <style scoped>
@@ -29,12 +31,16 @@
 </style>
 <script>
 const Video = () => import('./components/vdo/vdo.vue')
+const Landing = () => import('./components/landing/landing.vue')
 const Engine = () => import('./components/engine/engine.vue')
+const PrivateLunar = () => import('./components/privateLunar/privateLunar.vue')
 
 export default {
     components: {
         Video,
-        Engine
+        Landing,
+        Engine,
+        PrivateLunar
     },
     data() {
         return {
