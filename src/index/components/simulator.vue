@@ -23,11 +23,14 @@
     </div>
 </template>
 <style scoped>
+
 .topic {
     margin-top: 170px;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
     text-align:left;
+    line-height: 39pt
+
 
 }
 p{
