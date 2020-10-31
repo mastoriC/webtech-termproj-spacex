@@ -26,8 +26,8 @@
                     </router-link>
                 </li>
                 <li class="nav-item secondary text-uppercase" v-for="(l, i) in secondaryLinks" :key="i">
-                    <a v-if="l.external" :href="l.link" class="nav-link position-relative">{{ l.title }}</a>
-                    <router-link tag="span" v-else :to="l.link" class="nav-link pointer position-relative">
+                    <a v-if="l.external" :href="l.link" target="_blank" class="nav-link position-relative">{{ l.title }}</a>
+                    <router-link v-else tag="span" :to="l.link" class="nav-link pointer position-relative">
                         {{ l.title }}
                     </router-link>
                 </li>
