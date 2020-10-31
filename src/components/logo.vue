@@ -75,7 +75,7 @@
     position: absolute;
 }
 .fill-white {
-    fill: white;
+    fill: #fff;
 }
 @media screen and (max-width: 992px) {
     #logo {
@@ -85,7 +85,7 @@
         margin-top: -5px;
         margin-left: 15px;
         transform: translate(-50%,-50%);
-        z-index: 55;
+        z-index: 30 !important;
     }
 }
 </style>
