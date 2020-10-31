@@ -73,5 +73,6 @@ export const router = new Router({
 /* Automatic change page title depend on route meta. */
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title
+    window.scrollTo(0, 0)
     next()
 })
