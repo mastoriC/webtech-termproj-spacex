@@ -1,0 +1,36 @@
+{
+    "desktop": [
+        [
+            "https://www.spacex.com/static/images/starship/desktop/WebsiteStarshipStack_Render_Desktop.webp"
+        ],
+        [
+            "hhttps://www.spacex.com/static/images/starship/desktop/WebsiteStarship_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/starship/desktop/WebsiteSuperHeavy_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/starship/desktop/WebsiteStarshipShowcase_Render_Desktop.webp",
+            "https://www.spacex.com/static/images/starship/desktop/WebsiteStarshipShowcaseCargo_Render_Desktop.webp"
+        ]
+    ],
+    "mobile": [
+        [
+            "https://www.spacex.com/static/images/starship/mobile/WebsiteStarshipStack_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/starship/mobile/WebsiteStarship_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/starship/mobile/WebsiteSuperHeavy_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/starship/mobile/WebsiteStarshipShowcase_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/starship/mobile/WebsiteStarshipShowcaseCargo_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9SoloFairings_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9SoloDragon_Render_Mobile.webp"
+        ]
+    ]
+}

@@ -10,6 +10,7 @@
                 </div>
             </div>
         </div>
+        <Info/>
         <Video/>
         <Landing/>
         <Engine/>
@@ -31,6 +32,7 @@
 }
 </style>
 <script>
+const Info = () => import('./components/info/info.vue')
 const Video = () => import('./components/vdo/vdo.vue')
 const Landing = () => import('./components/landing/landing.vue')
 const Engine = () => import('./components/engine/engine.vue')
@@ -39,6 +41,7 @@ const StaticImg = () => import('./components/staticImg/staticImg.vue')
 
 export default {
     components: {
+        Info,
         Video,
         Landing,
         Engine,
