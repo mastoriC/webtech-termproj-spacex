@@ -39,7 +39,7 @@
 .nav-holder {
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 60px;
     z-index: 100;
 }
 .nav-holder.is-hidden {
@@ -53,7 +53,8 @@
     max-width: 1400px;
     transition: opacity .2s linear .1s;
 }
-.nav-holder.is-hidden .header {
+.nav-holder.is-hidden .header,
+.nav-holder.is-hidden .hamburger {
     transition-delay: 0s;
     opacity: 0;
 }
@@ -65,7 +66,7 @@
     left: 285px;
     top: 38px;
     height: 30px;
-    display: flex;
+    display: none;
 }
 .header-background {
     top: 0;
@@ -111,20 +112,15 @@
 
 .nav-holder .hamburger {
     top: 50%;
-    right: 50px;
     width: 16px;
     height: 16px;
     transform: translateY(-50%);
-    margin-top: 2px;
+    margin-top: 0;
     outline: none;
     border: none;
     background: none;
     transition: opacity .2s linear .1s;
     z-index: 30;
-}
-.nav-holder.is-hidden .hamburger {
-    transition-delay: 0s;
-    opacity: 0;
 }
 
 .nav-holder .hamburger .bar {
@@ -165,7 +161,7 @@
 }
 
 .nav-holder.menu-open .menu {
-    width: 350px;
+    width: 290px;
 }
 
 .menu-overlay {
@@ -199,7 +195,7 @@
 
 .menu .navbar-nav {
     position: absolute;
-    top: 75px;
+    top: 50px;
     right: 50px;
     width: 250px;
     transition: opacity .1s ease;
@@ -214,7 +210,7 @@
 }
 
 .menu .nav-item.primary {
-    display: none;
+    display: block;
 }
 
 .menu .nav-item {
@@ -232,27 +228,40 @@
     color: #8b939b;
 }
 
-@media screen and (max-width: 992px) {
+.hamburger,
+.menu .navbar-nav {
+    right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger,
+    .menu .navbar-nav {
+        right: 50px;
+    }
+
+    .nav-holder.menu-open .menu {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .nav-holder {
-        height: 60px;
+        height: 100px;
     }
     .header .navbar-nav {
-        display: none;
-    }
-    .header-background {
-        height: 60px;
+        display: flex;
     }
 
     .nav-holder .hamburger {
-        margin-top: 0;
+        margin-top: 2px;
     }
     
     .menu .navbar-nav {
-        top: 50px;
+        top: 75px;
     }
 
     .menu .nav-item.primary {
-        display: block;
+        display: none;
     }
 }
 </style>
