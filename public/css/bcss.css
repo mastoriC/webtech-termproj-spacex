@@ -54,7 +54,7 @@ a, a:hover {
 .btn-outline {
     border: 2px solid white;
     border-collapse: collapse;
-    background: inherit;
+    background: none;
     color: inherit;
     font-size: smaller;
     cursor: pointer;
