@@ -4,7 +4,7 @@
         <div class="header navigation navbar navbar-expand position-relative p-0" ref="navBar">
             <Logo/>
             <ul class="navbar-nav">
-                <li class="nav-item text-uppercase my-auto px-2 px-xl-3" v-for="(l, i) in primaryLinks" :key="i">
+                <li class="nav-item text-uppercase my-auto px-2 px-xl-3" v-for="(l, i) in primaryLinks" :key="`PRI${i}`">
                     <router-link tag="span" :to="l.link" class="nav-link pointer position-relative p-0 text-white">
                         {{ l.title }}
                     </router-link>
@@ -20,12 +20,12 @@
         <div class="menu">
             <div class="menu-background position-absolute bg-black w-100 "></div>
             <ul class="navbar-nav text-right mx-auto">
-                <li class="nav-item primary text-uppercase" v-for="(l, i) in primaryLinks" :key="i">
+                <li class="nav-item primary text-uppercase" v-for="(l, i) in primaryLinks" :key="`PRI${i}`">
                     <router-link tag="span" :to="l.link" class="nav-link pointer position-relative">
                         {{ l.title }}
                     </router-link>
                 </li>
-                <li class="nav-item secondary text-uppercase" v-for="(l, i) in secondaryLinks" :key="i">
+                <li class="nav-item secondary text-uppercase" v-for="(l, i) in secondaryLinks" :key="`SEC${i}`">
                     <a v-if="l.external" :href="l.link" target="_blank" class="nav-link position-relative">{{ l.title }}</a>
                     <router-link v-else tag="span" :to="l.link" class="nav-link pointer position-relative">
                         {{ l.title }}

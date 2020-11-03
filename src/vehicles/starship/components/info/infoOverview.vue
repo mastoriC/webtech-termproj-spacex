@@ -6,10 +6,10 @@
                 {{s[0]}} m <span class="text-grey">/ {{s[1]}} ft</span>
             </div>
         </div>
-        <div class="row mx-auto py-3 text bottom-line" v-for="(s, key) in weight" :key="key">
+        <div class="row mx-auto py-3 text bottom-line" v-for="(s, key) in payload" :key="key">
             <div class="col pl-0 text-uppercase font-weight-bold">Payload to {{key}}</div>
             <div class="col pr-0 text-right">
-                {{s[0]}} kg <span class="text-grey">/ {{s[1]}} lb</span>
+                {{s[0]}} t <span class="text-grey">/ {{s[1]}} klb</span>
             </div>
         </div>
     </div>
@@ -31,14 +31,11 @@ export default {
     data() {
         return {
             specs: {
-                height: ["70", "229.6"],
-                diameter: ["3.7", "12"],
+                height: ["120", "394"],
+                diameter: ["9", "30"],
             },
-            weight: {
-                mass: ["549,054", "1,207,920"],
-                leo: ["22,800", "50,265"],
-                gto: ["8,300", "18,300"],
-                mars: ["4,020", "8,860"]
+            payload: {
+                leo: ["100+", "220+"]
             }
         }
     }

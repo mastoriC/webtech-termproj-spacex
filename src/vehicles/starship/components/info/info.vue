@@ -7,14 +7,12 @@
                     <div v-if="!this.$isMobile">
                         <div class="col-5 mx-5 pr-5 info-box">
                             <div class="text-uppercase mb-5">
-                                <h5 class="mb-3">Falcon 9</h5>
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                             </div>
-                            <Overview v-if="pageNumber===1"/>
-                            <FirstStg v-else-if="pageNumber===2" @selectSec="changeSec"/>
-                            <SecStg v-else-if="pageNumber===3"/>
-                            <InterStg v-else-if="pageNumber===4"/>
-                            <Payload v-else-if="pageNumber===5" @selectSec="changeSec"/>
+                            <Overview v-if="pageNumber==1"/>
+                            <Starship v-else-if="pageNumber==2"/>
+                            <SuperHeavy v-else-if="pageNumber==3"/>
+                            <Payload v-else-if="pageNumber==4" @selectSec="changeSec"/>
                         </div>
                         <CarouselUI :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
@@ -32,7 +30,6 @@
             <div class="col-12">
                 <div class="mb-4">
                     <div class="text-uppercase d-inline-block">
-                        <h6 class="mb-0">Falcon 9</h6>
                         <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                     </div>
                     <div class="float-right">
@@ -40,10 +37,9 @@
                     </div>
                 </div>
                 <Overview v-if="pageNumber==1"/>
-                <FirstStg v-else-if="pageNumber==2" @selectSec="changeSec"/>
-                <SecStg v-else-if="pageNumber==3"/>
-                <InterStg v-else-if="pageNumber==4"/>
-                <Payload v-else-if="pageNumber==5" @selectSec="changeSec"/>
+                <Starship v-else-if="pageNumber==2"/>
+                <SuperHeavy v-else-if="pageNumber==3"/>
+                <Payload v-else-if="pageNumber==4" @selectSec="changeSec"/>
             </div>
         </div>
     </div>
@@ -76,9 +72,8 @@
 </style>
 <script>
 const Overview = () => import('./infoOverview.vue')
-const FirstStg = () => import('./infoFirstStg.vue')
-const SecStg = () => import('./infoSecStg.vue')
-const InterStg = () => import('./infoInterStg.vue')
+const Starship = () => import('./infoStarship.vue')
+const SuperHeavy = () => import('./infoSuperHeavy.vue')
 const Payload = () => import('./infoPayload.vue')
 
 const CarouselUI = () => import('./infoCarouselUI.vue')
@@ -88,9 +83,8 @@ import JSON_bgs from './bgs.json'
 export default {
     components: {
         Overview,
-        FirstStg,
-        SecStg,
-        InterStg,
+        Starship,
+        SuperHeavy,
         Payload,
         CarouselUI
     },
@@ -101,7 +95,7 @@ export default {
             lastPos: window.scrollY,
             pageNumber: 1,
             secNumber: 1,
-            titles: ["Overview", "First Stage", "Second Stage", "Interstage", "Payload"],
+            titles: ["Overview", "Starship", "Super Heavy", "Payload"],
             bgFirst: (this.$isMobile) ?
             "https://www.spacex.com/static/images/starship/mobile/WebsiteStarshipStack_Lines_Mobile.webp":
             "https://www.spacex.com/static/images/starship/desktop/WebsiteStarshipStack_Lines_Desktop.webp",
