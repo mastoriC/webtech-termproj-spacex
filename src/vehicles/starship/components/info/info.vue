@@ -104,7 +104,8 @@ export default {
     },
     mounted() {
         var bg = this.$refs.bg
-        this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screenX / 1000))
+        this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screen.availWidth / 10000))
+        console.log(this.actHeight, bg.scrollHeight, window.screen.availWidth)
         if (window.scrollY > this.actHeight) {
             this.opacity = 1;
         }
@@ -122,6 +123,7 @@ export default {
                 increaseOpa = setInterval(() => {
                     if (this.opacity < 1) {
                         this.opacity += 0.005;
+                        console.log(this.actHeight, window.scrollY)
                     }
                     if (this.opacity >= 1 || !(window.scrollY >= this.actHeight)) {
                         clearInterval(increaseOpa)

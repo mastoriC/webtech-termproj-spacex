@@ -110,7 +110,8 @@ export default {
     },
     mounted() {
         var bg = this.$refs.bg
-        this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screenX / 1000))
+        this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screen.availWidth / 50000))
+        console.log(this.actHeight, bg.scrollHeight, window.screen.availWidth)
         if (window.scrollY > this.actHeight) {
             this.opacity = 1;
         }
