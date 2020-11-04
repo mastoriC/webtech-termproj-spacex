@@ -8,10 +8,15 @@
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/backgrounds/home_moon.webp");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/home_moon_mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+@media screen and (min-width: 1200px) {
+    .background {
+        background-image: url("https://www.spacex.com/static/images/backgrounds/home_moon.webp");
+    }
 }
 .height-80 {
     height: 80vh;

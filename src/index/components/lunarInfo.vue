@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-sm-5" :class="(this.$isMobileSM)?`px-4 py-5`:`middle-right mr-5 px-5`">
+    <div class="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5" :class="(this.$isMobileSM)?`px-4 py-5`:`middle-right mr-xl-5 px-5`">
         <div class="dm-subtitle font-weight-lighter mb-3">05/01/20</div>
         <div class="dm-title-2 line-height font-weight-bold mb-4">
             NASA SELECTS LUNAR OPTIMIZED STARSHIP
