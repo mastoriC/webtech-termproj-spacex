@@ -1,33 +1,54 @@
 <template>
-    <div class="background vh-100 position-relative">
-            <div class="text-uppercase middle-center px-5" :style="`opacity:${opacity}`">
-              
-                
-                <div class="dm-title-2 font-weight-bold animate__animated animate__fadeInUp animate__fast">
-                    Starship takes<br> flight 
-                </div>
-               
-                <div class="mt-4">
-                    <router-link tag="span" :to="{name: 'Demo2Mission'}" class="button d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative" :class="(opacity>=1)?`event-auto`:`event-none`">
-                        <div class="on-hover"></div>
-                        Replay
-                    </router-link>
-                </div>
+    <div>
+        <VDOplate :status="open" @closeTab="closeVDOTab" v-if="open"/>
+        <div class="background vh-100 position-relative">
+            <div class="col-12 col-sm-6 col-xl-4 bottom-left text-shadow px-3 px-sm-5">
+                <div class="font-weight-bold line-height dm-title-2 text-uppercase">Starship Takes Flight</div>
+                <span class="button d-inline-block btn-outline py-3 px-5 my-4 text-uppercase text-center font-weight-bold position-relative z-1" v-on:click="pushTab">
+                    <div class="on-hover z-1"></div>
+                    <span class="px-2">Replay</span>
+                </span>
             </div>
         </div>
-
+    </div>
 </template>
 <style scoped>
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/starshipliftoff_desktop1.webp");
     background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background-size: cover;
+    background-position: center;
 }
-.middle-center {
+.bottom-left {
     position: absolute;
-    bottom: 0%;
-    left: 0%;
-    /* transform: translate(-50%, -50%); */
-    width: 60%;
+    bottom: 10vh;
+}
+.text-shadow {
+    text-shadow: 0px 0px 16px #000000;
+}
+.line-height {
+    line-height: 1.125em;
 }
 </style>
+<script>
+const VDOplate = () => import('./starshipVDO.vue')
+export default {
+    components: {
+        VDOplate,
+    },
+    data() {
+        return {
+            open: false
+        }
+    },
+    methods: {
+        pushTab() {
+            this.open = true
+            window.scrollBy(0, 100)
+        },
+        closeVDOTab() {
+            this.open = false
+        }
+    }
+}
+</script>
