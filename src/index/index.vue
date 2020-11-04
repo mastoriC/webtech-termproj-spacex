@@ -1,6 +1,7 @@
 <template>
     <div>
-        <Starlink/>
+        <Starlink class="d-none"/>
+        <div class="vh-100 bg-dark"></div>
         <CrewDemo/>
         <Simulator/>
         <Starship/>
