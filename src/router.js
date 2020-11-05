@@ -16,7 +16,7 @@ const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.v
 
 // Update (Starlink)
 const Starlink09032020 = () => import('./updates/09-03-2020/starlink.vue')
-const Starlink09252020 = () => import('./updates/09-25-2020/starlink.vue')
+const Starlink10062020 = () => import('./updates/10-06-2020/starlink.vue')
 const Starlink10182020 = () => import('./updates/10-18-2020/starlink.vue')
 
 Vue.use(Router)
@@ -94,8 +94,8 @@ export const router = new Router({
             }
         },
         {
-            path: "/updates/starlink-mission-09-25-2020",
-            component: Starlink09252020,
+            path: "/updates/starlink-mission-10-06-2020",
+            component: Starlink10062020,
             meta: {
                 title: "SpaceX - Updates"
             }
