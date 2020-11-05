@@ -1,0 +1,27 @@
+{
+    "Countdown": [
+        ["00:38:00", "SpaceX Launch Director verifies go for propellant load"],
+        ["00:35:00", "RP-1 (rocket grade kerosene) loading underway"],
+        ["00:35:00", "1st stage LOX (liquid oxygen) loading underway"],
+        ["00:16:00", "2nd stage LOX loading underway"],
+        ["00:07:00", "Falcon 9 begins engine chill prior to launch"],
+        ["00:01:00", "Command flight computer to begin final prelaunch checks"],
+        ["00:01:00", "Propellant tank pressurization to flight pressure begins"],
+        ["00:00:45", "SpaceX Launch Director verifies go for launch"],
+        ["00:00:03", "Engine controller commands engine ignition sequence to start"],
+        ["00:00:00", "Falcon 9 liftoff"]
+    ],
+    "Launch, Landing and Deployment": [
+        ["00:01:11", "Max Q (moment of peak mechanical stress on the rocket)"],
+        ["00:02:31", "1st stage main engine cutoff (MECO)"],
+        ["00:02:35", "1st and 2nd stages separate"],
+        ["00:02:42", "2nd stage engine starts (SES-1)"],
+        ["00:03:27", "Fairing deployment"],
+        ["00:06:47", "1st stage entry burn complete"],
+        ["00:08:07", "2nd stage engine cutoff (SECO-1)"],
+        ["00:08:35", "1st stage landing"],
+        ["01:03:32", "2nd stage engine starts (SES-2)"],
+        ["01:04:17", "2nd stage engine cutoff (SECO-2)"],
+        ["01:29:18", "GPS III Space Vehicle 04 deployment"]
+    ]
+}

@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="background vh-100" :style="`background-position: 50% ${bgPos}; background-size: auto ${bgSize};`">
+        <div class="position-relative vh-100">
+            <div class="background vh-100" :style="`background-position: 50% ${bgPos}`"></div>
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="dm-title font-weight-bold animate__animated animate__fadeInUp animate__fast">
                     Falcon Heavy
@@ -23,6 +24,7 @@
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/fh_feature.webp");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .middle-center {
     position: absolute;
@@ -56,7 +58,7 @@ export default {
             opacity: 1,
             scrollPos: window.scrollY,
             bgPos: "50%",
-            bgSize: "100vh"
+            bgSize: 1
         }
     },
     created() {
@@ -70,8 +72,7 @@ export default {
             var height = window.innerHeight / 10;
             this.opacity = (height - window.scrollY) / height;
             this.bgPos = (window.scrollY / 4) + "px";
-            this.bgSize = 100 + (100 * (window.scrollY/10000)) + "vh";
-            console.log(this.bgSize)
+            this.bgSize = 1 + window.scrollY/1000;
             this.scrollPos = window.scrollY;
         }
     }

@@ -1,5 +1,5 @@
 <template>
-        <div class="bg-black">
+        <div class="bg-black z-1">
             <div class="container py-5">
                 <div ref="bar" class="row mx-5" :style="`opacity:${opacity}`">
                     <div class="col-4 text-center" v-for="stat in stats" :key="stat.index">

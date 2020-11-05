@@ -21,15 +21,15 @@
             <div class="menu-background position-absolute bg-black w-100 "></div>
             <ul class="navbar-nav text-right mx-auto">
                 <li class="nav-item primary text-uppercase" v-for="(l, i) in primaryLinks" :key="`PRI${i}`">
-                    <router-link tag="span" :to="l.link" class="nav-link pointer position-relative">
+                    <span @click="linkRouter(l.link)" class="nav-link pointer position-relative">
                         {{ l.title }}
-                    </router-link>
+                    </span>
                 </li>
                 <li class="nav-item secondary text-uppercase" v-for="(l, i) in secondaryLinks" :key="`SEC${i}`">
                     <a v-if="l.external" :href="l.link" target="_blank" class="nav-link position-relative">{{ l.title }}</a>
-                    <router-link v-else tag="span" :to="l.link" class="nav-link pointer position-relative">
+                    <span v-else @click="linkRouter(l.link)" class="nav-link pointer position-relative">
                         {{ l.title }}
-                    </router-link>
+                    </span>
                 </li>
             </ul>
         </div>
@@ -283,7 +283,7 @@ export default {
             ],
             secondaryLinks: [
                 { title: "mission", link: "/mission/" },
-                { title: "launches", link: "/mission/" },
+                { title: "launches", link: "/launches/" },
                 { title: "careers", link: "/careers/" },
                 { title: "updates", link: "/updates/" },
                 { title: "shop", link: "https://shop.spacex.com/", external: true },
@@ -317,6 +317,10 @@ export default {
             var navBar = this.$refs.navBar
             if (this.isMenuOpen) navBar.classList.add("menu-open");
             else navBar.classList.remove("menu-open");
+        },
+        linkRouter(link) {
+            this.menuToggler()
+            this.$router.push(link).catch(err => {})
         }
     }
 };

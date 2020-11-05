@@ -1,7 +1,6 @@
 <template>
     <div>
-        <Starlink class="d-none"/>
-        <div class="vh-100 bg-dark"></div>
+        <GPSIII/>
         <CrewDemo/>
         <Simulator/>
         <Starship/>
@@ -9,7 +8,7 @@
     </div>
 </template>
 <script>
-const Starlink = () => import('./components/starlink.vue')
+const GPSIII = () => import('./components/GPSIII.vue')
 const CrewDemo = () => import('./components/crewDemo.vue')
 const Simulator = () => import('./components/simulator.vue')
 const Starship = () => import('./components/starship.vue')
@@ -17,7 +16,7 @@ const Lunar = () => import('./components/lunar.vue')
 
 export default {
     components: {
-        Starlink,
+        GPSIII,
         CrewDemo,
         Simulator,
         Starship,

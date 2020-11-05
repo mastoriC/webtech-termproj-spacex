@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="position-relative" ref="bg" style="height: 200vh">
-            <div class="background background-full vh-100" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
+            <div class="background background-full vh-100 z-0" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
                     <div v-if="!this.$isMobile">
@@ -111,7 +111,6 @@ export default {
     mounted() {
         var bg = this.$refs.bg
         this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screen.availWidth / 50000))
-        console.log(this.actHeight, bg.scrollHeight, window.screen.availWidth)
         if (window.scrollY > this.actHeight) {
             this.opacity = 1;
         }
