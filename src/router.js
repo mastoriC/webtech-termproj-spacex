@@ -11,8 +11,8 @@ const Starship = () => import('./vehicles/starship/starship.vue')
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
 const Launches = () => import('./launches/launches.vue')
 
-const Demo2Mission = () => import('./updates/30-5-2020/demo2Mission.vue')
-const SpaceForceMission = () => import('./updates/25-9-2020/spaceForceMission.vue')
+const Demo2Mission = () => import('./updates/05-30-2020/demo2Mission.vue')
+const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.vue')
 
 
 Vue.use(Router)
