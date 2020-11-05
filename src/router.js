@@ -13,7 +13,7 @@ const Launches = () => import('./launches/launches.vue')
 
 const Demo2Mission = () => import('./updates/05-30-2020/demo2Mission.vue')
 const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.vue')
-
+const Starlink10182020 = () => import('./updates/10-18-2020/starlink.vue')
 
 Vue.use(Router)
 
@@ -93,6 +93,14 @@ export const router = new Router({
             name: "SpaceForceMission",
             path: "/updates/spaceforce-selection-09-25-2020",
             component: SpaceForceMission,
+            meta: {
+                title: "SpaceX - Updates"
+            }
+        },
+        {
+            name: "Starlink-10182020-Mission",
+            path: "/updates/starlink-mission-10-18-2020",
+            component: Starlink10182020,
             meta: {
                 title: "SpaceX - Updates"
             }
