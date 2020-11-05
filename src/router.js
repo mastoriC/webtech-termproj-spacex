@@ -13,6 +13,10 @@ const Launches = () => import('./launches/launches.vue')
 
 const Demo2Mission = () => import('./updates/05-30-2020/demo2Mission.vue')
 const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.vue')
+
+// Update (Starlink)
+const Starlink09032020 = () => import('./updates/09-03-2020/starlink.vue')
+const Starlink09252020 = () => import('./updates/09-25-2020/starlink.vue')
 const Starlink10182020 = () => import('./updates/10-18-2020/starlink.vue')
 
 Vue.use(Router)
@@ -81,6 +85,29 @@ export const router = new Router({
         },
 
         /* Updates */
+        // Starlink Update
+        {
+            path: "/updates/starlink-mission-09-03-2020",
+            component: Starlink09032020,
+            meta: {
+                title: "SpaceX - Updates"
+            }
+        },
+        {
+            path: "/updates/starlink-mission-09-25-2020",
+            component: Starlink09252020,
+            meta: {
+                title: "SpaceX - Updates"
+            }
+        },
+        {
+            name: "Starlink-10182020-Mission",
+            path: "/updates/starlink-mission-10-18-2020",
+            component: Starlink10182020,
+            meta: {
+                title: "SpaceX - Updates"
+            }
+        },
         {
             name: "Demo2Mission",
             path: "/updates/crew-demo-2-mission-update-5-30-2020",
@@ -93,14 +120,6 @@ export const router = new Router({
             name: "SpaceForceMission",
             path: "/updates/spaceforce-selection-09-25-2020",
             component: SpaceForceMission,
-            meta: {
-                title: "SpaceX - Updates"
-            }
-        },
-        {
-            name: "Starlink-10182020-Mission",
-            path: "/updates/starlink-mission-10-18-2020",
-            component: Starlink10182020,
             meta: {
                 title: "SpaceX - Updates"
             }
