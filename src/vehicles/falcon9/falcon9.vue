@@ -22,7 +22,7 @@
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/f9_feature.jpg");
     background-repeat: no-repeat;
-    background-size: auto 100vh;
+    background-size: cover;
 }
 .middle-center {
     position: absolute;

@@ -24,7 +24,7 @@
 <style scoped>
 .background {
     background-repeat: no-repeat;
-    background-size: auto 100vh;
+    background-size: cover;
 }
 .middle-center {
     position: absolute;

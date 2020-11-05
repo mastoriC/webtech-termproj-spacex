@@ -5,6 +5,7 @@ const Index = () => import('./index/index.vue')
 
 const Falcon9 = () => import('./vehicles/falcon9/falcon9.vue')
 const FalconHeavy = () => import('./vehicles/falcon-heavy/falconHeavy.vue')
+const Dragon = () => import('./vehicles/dragon/dragon.vue')
 const Starship = () => import('./vehicles/starship/starship.vue')
 
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
@@ -43,6 +44,14 @@ export const router = new Router({
             component: FalconHeavy,
             meta: {
                 title: "SpaceX - Falcon Heavy"
+            }
+        },
+        {
+            name: "Dragon",
+            path: "/vehicles/dragon",
+            component: Dragon,
+            meta: {
+                title: "SpaceX - Dragon"
             }
         },
         {
