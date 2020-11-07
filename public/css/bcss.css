@@ -40,6 +40,9 @@ a, a:hover {
     font-weight: 300;
     line-height: 30px;
 }
+.text-shadow .button {
+    text-shadow: none;
+}
 .transition-4 {
     transition: .4s;
 }
