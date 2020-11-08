@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm order-first order-sm-last py-4 py-sm-5 px-0">
-                    <video class="w-100 px-0 px-xl-5" controls="" autoplay="" loop="" muted="" preload="auto" autobuffer="true">
+                    <video class="w-100 px-0 px-xl-5" autoplay loop muted preload="auto" autobuffer="true">
                         <source type="video/mp4" src="https://www.spacex.com/media/iss_docking_sim.mp4">
                         <source type="video/webm" src="https://www.spacex.com/media/iss_docking_sim.webm">
                     </video>
