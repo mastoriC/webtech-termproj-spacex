@@ -2,12 +2,11 @@
     <div>
         <VDOplate :status="open" @closeTab="closeVDOTab" v-if="open"/>
         <div class="background vh-100 position-relative">
-            <div class="col-12 col-sm-6 col-xl-4 bottom-left text-shadow px-3 px-sm-5">
-                <div class="font-weight-bold line-height dm-title-2 text-uppercase">Starship Takes Flight</div>
-                <span class="button d-inline-block btn-outline py-3 px-5 my-4 text-uppercase text-center font-weight-bold position-relative z-1" v-on:click="pushTab">
-                    <div class="on-hover z-1"></div>
-                    <span class="px-2">Replay</span>
-                </span>
+            <div class="section-inner mx-auto w-100 vh-100">
+                <div class="col-12 col-sm-6 col-xl-4 bottom-left text-shadow px-3 px-sm-5">
+                    <div class="font-weight-bold line-height dm-title-2 text-uppercase">Starship Takes Flight</div>
+                    <btn type="a" target="https://youtu.be/s1HA9LlFNM0" class="my-4" @click.native="pushTab">Replay</btn>
+                </div>
             </div>
         </div>
     </div>
@@ -42,7 +41,8 @@ export default {
         }
     },
     methods: {
-        pushTab() {
+        pushTab(e) {
+            e.preventDefault()
             this.open = true
             window.scrollBy(0, 100)
         },

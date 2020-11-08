@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="section-inner mx-auto w-100">
         <div class="mx-5">
             <div class="my-5" v-for="(times, title) in timetable" :key="title">
                 <div class="dm-title-2 font-weight-bold text-uppercase">{{title}}</div>

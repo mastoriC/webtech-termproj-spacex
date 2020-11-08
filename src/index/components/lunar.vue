@@ -1,6 +1,6 @@
 <template>
-    <div class="position-relative">
-        <div class="background position-relative" :class="(this.$isMobileSM)?`height-80`:`vh-100`">
+    <div class="background position-relative" :class="(this.$isMobileSM)?`height-80`:`vh-100`">
+        <div class="section-inner mx-auto w-100 vh-100 position-relative">
             <LunarInfo v-if="!this.$isMobileSM"/>
         </div>
         <LunarInfo v-if="this.$isMobileSM"/>

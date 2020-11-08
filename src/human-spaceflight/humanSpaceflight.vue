@@ -9,10 +9,7 @@
                     Making life multiplanetary
                 </div>
                 <div class="mt-4">
-                    <router-link tag="span" :to="{name: 'Demo2Mission'}" class="button d-block d-lg-inline-block btn-outline py-3 px-5 m-3 text-uppercase text-center font-weight-bold position-relative" :class="(opacity>=1)?`event-auto`:`event-none`">
-                        <div class="on-hover"></div>
-                        View Our NASA DEMO-2 Mission
-                    </router-link>
+                    <btn type="router-link" size="large" :class="(opacity>=1)?`event-auto`:`event-none`" target="/updates/crew-demo-2-mission-update-5-30-2020/">View Our NASA DEMO-2 Mission</btn>
                 </div>
             </div>
         </div>

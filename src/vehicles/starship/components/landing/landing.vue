@@ -5,11 +5,7 @@
             <div class="text my-4">
                 Starship will enter Mars’ atmosphere at 7.5 kilometers per second and decelerate aerodynamically. The vehicle’s heat shield is designed to withstand multiple entries, but given that the vehicle is coming into Mars' atmosphere so hot, we still expect to see some ablation of the heat shield (similar to wear and tear on a brake pad). The engineering video below simulates the physics of Mars entry for Starship.
             </div>
-            <router-link tag="span" :to="``" class="button d-inline-block btn-outline py-3 px-4
-             text-uppercase text-center font-weight-bold position-relative">
-                <div class="on-hover"></div>
-                WATCH SIMULATION
-            </router-link>
+            <btn target="/launches">Watch Simulation</btn>
         </div>
     </div>
 </template>

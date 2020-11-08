@@ -8,10 +8,7 @@
                 <div class="dm-title-3 font-weight-bold mb-3">{{info.title}}</div>
                 <div class="col-12 col-lg-7 p-0">{{info.desc}}</div>
             </div>
-            <router-link tag="span" :to="`/human-spaceflight+${info.url}`" class="button d-inline-block btn-outline py-3 px-5 text-uppercase text-center font-weight-bold position-relative">
-                <div class="on-hover"></div>
-                EXPLORE
-            </router-link>
+            <btn type="router-link" :target="`/human-spaceflight${info.link}`">Explore</btn>
         </div>
     </div>
 </template>
