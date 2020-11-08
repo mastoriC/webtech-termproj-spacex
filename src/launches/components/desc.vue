@@ -14,6 +14,7 @@
                     </div>
                 </div>
             </div>
+            <Infographic class="mx-5"/>
         </div>
     </div>
 </template>
@@ -28,3 +29,11 @@
     text-decoration: none;
 }
 </style>
+<script>
+const Infographic = () => import('./infographic.vue')
+export default {
+    components: {
+        Infographic,
+    }
+}
+</script>
