@@ -1,6 +1,6 @@
 <template>
-    <div class="px-4">
-        <div class="mx-5">
+    <div class="section-inner w-100 mx-auto">
+        <div class="px-5">
             <img class="w-100 my-5" src="https://www.spacex.com/static/images/falcon-heavy/desktop/CAROUSEL__0001s_0000_FH7.jpg">
             <div class="text-uppercase mb-5">
                 <div class="text-grey h5 mb-4">September 25, 2020</div>

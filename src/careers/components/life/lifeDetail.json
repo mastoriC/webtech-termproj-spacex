@@ -1,0 +1,22 @@
+[
+    {
+        "title": "CHANGE THE FUTURE",
+        "desc": "SpaceX employees work on revolutionary programs, and as a result their work regularly leads to accomplishing historical firsts. Our technology has already increased access to space and will shape humanity’s future among the stars.",
+        "img": "https://www.spacex.com/static/images/content/careers_change_future.jpg"
+    },
+    {
+        "title": "BENEFITS AND PERKS",
+        "desc": "Our employees’ well-being is important to us and essential to our capacity to do extraordinary things. We offer a wide variety of programs to support the health, wellness, and financial security of our employees and their families.",
+        "img": "https://www.spacex.com/static/images/content/benefits.jpg"
+    },
+    {
+        "title": "CULTURE OF INCLUSION",
+        "desc": "We strive to create an inclusive workplace where different viewpoints are encouraged and the best idea—no matter the source—wins. SpaceX facilitates employee-led groups that build community around social identities and common interests, fostering connections across the company. They provide opportunities for employees to develop skills, learn about topics of interest from speakers, gather socially and support one another.",
+        "img": "https://www.spacex.com/static/images/content/community.jpg"
+    },
+    {
+        "title": "COMMUNITY OUTREACH",
+        "desc": "SpaceX employees are empowered to volunteer in groups or individually in the communities we operate. We also partner with national and local organizations that focus on Science, Technology, Engineering and Math (STEM) education for K-12 students and educators, with special emphasis on those that serve students from underrepresented backgrounds in STEM.",
+        "img": "https://www.spacex.com/static/images/content/outreach.jpg"
+    }
+]

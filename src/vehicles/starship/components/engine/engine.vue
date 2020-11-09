@@ -1,8 +1,10 @@
 <template>
     <div>
-        <div class="background vh-100 position-relative px-5">
-            <div v-if="!this.$isMobile" class="col-5 pr-5 middle">
-                <Info/>
+        <div class="background vh-100 position-relative">
+            <div class="section-inner w-100 mx-auto">
+                <div v-if="!this.$isMobile" class="col-5 pl-5 middle">
+                    <Info/>
+                </div>
             </div>
         </div>
         <div v-if="this.$isMobile" class="my-5 container">

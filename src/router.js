@@ -10,7 +10,9 @@ const Starship = () => import('./vehicles/starship/starship.vue')
 
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
 const Launches = () => import('./launches/launches.vue')
+const Careers = () => import('./careers/careers.vue')
 
+// Update
 const Demo2Mission = () => import('./updates/05-30-2020/demo2Mission.vue')
 const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.vue')
 
@@ -67,6 +69,7 @@ export const router = new Router({
             }
         },
 
+        // Etc.
         {
             name: "humanSpaceflight",
             path: "/human-spaceflight",
@@ -81,6 +84,14 @@ export const router = new Router({
             component: Launches,
             meta: {
                 title: "SpaceX - Launches"
+            }
+        },
+        {
+            name: "Careers",
+            path: "/careers",
+            component: Careers,
+            meta: {
+                title: "SpaceX - Careers"
             }
         },
 
