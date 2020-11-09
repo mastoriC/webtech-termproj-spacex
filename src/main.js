@@ -4,6 +4,7 @@ import {router} from './router.js'
 
 import Button from '@/components/button.vue'
 
+Vue.prototype.$isMobileXL = (window.innerWidth < 1200);
 Vue.prototype.$isMobile = (window.innerWidth < 992);
 Vue.prototype.$isMobileSM = (window.innerWidth < 576);
 
