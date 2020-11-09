@@ -11,15 +11,9 @@ const Starship = () => import('./vehicles/starship/starship.vue')
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
 const Launches = () => import('./launches/launches.vue')
 const Careers = () => import('./careers/careers.vue')
+const Updates = () => import('./updates/updates.vue')
 
-// Update
-const Demo2Mission = () => import('./updates/05-30-2020/demo2Mission.vue')
-const SpaceForceMission = () => import('./updates/09-25-2020/spaceForceMission.vue')
-
-// Update (Starlink)
-const Starlink09032020 = () => import('./updates/09-03-2020/starlink.vue')
-const Starlink10062020 = () => import('./updates/10-06-2020/starlink.vue')
-const Starlink10182020 = () => import('./updates/10-18-2020/starlink.vue')
+const UpdatesRoutes = require('./updates/routes.js')
 
 Vue.use(Router)
 
@@ -94,43 +88,11 @@ export const router = new Router({
                 title: "SpaceX - Careers"
             }
         },
-
-        /* Updates */
-        // Starlink Update
         {
-            path: "/updates/starlink-mission-09-03-2020",
-            component: Starlink09032020,
-            meta: {
-                title: "SpaceX - Updates"
-            }
-        },
-        {
-            path: "/updates/starlink-mission-10-06-2020",
-            component: Starlink10062020,
-            meta: {
-                title: "SpaceX - Updates"
-            }
-        },
-        {
-            name: "Starlink-10182020-Mission",
-            path: "/updates/starlink-mission-10-18-2020",
-            component: Starlink10182020,
-            meta: {
-                title: "SpaceX - Updates"
-            }
-        },
-        {
-            name: "Demo2Mission",
-            path: "/updates/crew-demo-2-mission-update-5-30-2020",
-            component: Demo2Mission,
-            meta: {
-                title: "SpaceX - Updates"
-            }
-        },
-        {
-            name: "SpaceForceMission",
-            path: "/updates/spaceforce-selection-09-25-2020",
-            component: SpaceForceMission,
+            name: "Updates",
+            path: "/updates",
+            component: Updates,
+            children: UpdatesRoutes,
             meta: {
                 title: "SpaceX - Updates"
             }
