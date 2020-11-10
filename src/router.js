@@ -104,6 +104,18 @@ export const router = new Router({
 /* Automatic change page title depend on route meta. */
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title
+    document.body.classList.add("animate__animated")
+    document.body.classList.add("animate__faster")
+    document.body.classList.add("animate__fadeOut")
     window.scrollTo(0, 0)
-    next()
+    setTimeout(() => next(), 500)
+})
+router.afterEach((to, from) => {
+    document.body.classList.remove("animate__fadeOut")
+    document.body.classList.add("animate__fadeIn")
+    setTimeout(() => {
+        document.body.classList.remove("animate__animated")
+        document.body.classList.remove("animate__faster")
+        document.body.classList.add("animate__fadeIn")
+    }, 500);
 })

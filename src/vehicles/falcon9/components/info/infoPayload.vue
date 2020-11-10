@@ -11,7 +11,7 @@
             <div v-if="info[selected].learnmore === true" class="mt-3">
                 <router-link to="{name: `Dragon`}" tag="span" class="link pointer font-weight-bold">
                     Learn more about Dragon
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ref="icon" @mouseover="addMargin()"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ref="icon"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
                 </router-link>
             </div>
         </div>
@@ -64,7 +64,7 @@ export default {
                 this.selected = index;
                 this.$emit('selectSec', index+1);
             }
-        },
+        }
     }
 }
 </script>
