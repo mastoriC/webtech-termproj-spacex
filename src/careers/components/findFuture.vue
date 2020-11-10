@@ -2,7 +2,7 @@
     <div class="container text-center py-5">
         <div class="tall-line"></div>
         <div class="my-3">
-            <btn type="a" class="m-3" target="/careers">
+            <btn type="router-link" class="m-3" target="/careers">
                 Find Your Future
             </btn>
         </div>

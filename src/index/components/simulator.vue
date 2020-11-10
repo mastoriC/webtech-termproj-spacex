@@ -10,7 +10,7 @@
                         <div class="mb-4 mb-lg-5">
                             Crew Dragon is designed to autonomously dock and undock with the International Space Station. However, the crew can take manual control of the spacecraft if necessary.
                         </div>
-                        <btn type="a" newtab="true" target="https://iss-sim.spacex.com/">Try It</btn>
+                        <btn type="a" :newtab="true" target="https://iss-sim.spacex.com/">Try It</btn>
                     </div>
                 </div>
                 <div class="col-12 col-sm order-first order-sm-last py-4 py-sm-5 px-0">
