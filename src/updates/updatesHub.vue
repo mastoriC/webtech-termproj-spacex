@@ -91,9 +91,9 @@ export default {
     },
     computed: {
         smallLog: function() {
-            var fullLog = this.log
-            fullLog.shift()
-            return fullLog
+            var small = [...this.log]
+            small.shift()
+            return small
         }
     }
 }
