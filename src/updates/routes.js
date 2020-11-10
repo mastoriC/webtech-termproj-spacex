@@ -3,6 +3,7 @@ const Hub = () => import('./updatesHub.vue')
 const GPSIII = () => import('./11-05-2020/gpsiii.vue')
 const Demo2Mission = () => import('./05-30-2020/demo2Mission.vue')
 const SpaceForceMission = () => import('./09-25-2020/spaceforce.vue')
+const NasaLunar = () => import('./05-01-2020/nasa.vue')
 
 /* Starlink */
 const Starlink09032020 = () => import('./09-03-2020/starlink.vue')
@@ -62,6 +63,14 @@ module.exports = [
         component: SpaceForceMission,
         meta: {
             title: "SpaceX - Launches"
+        }
+    },
+    {
+        name: "NasaLunar",
+        path: "nasa-selects-lunar-optimized-starship",
+        component: NasaLunar,
+        meta: {
+            title: "SpaceX - Updates"
         }
     }
 ]
