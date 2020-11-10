@@ -24,6 +24,8 @@
 <style scoped>
 .panel {
     bottom: 0;
+    left: 0;
+    right: 0;
 }
 .dot-panel {
     position: absolute;
