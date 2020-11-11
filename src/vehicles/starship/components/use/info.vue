@@ -2,8 +2,8 @@
     <div>
         <div class="background vh-100 position-relative"
         :style="`background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
-            <div v-if="!this.$isMobile">
-                <div class="col-4 mx-5 info-box">
+            <div v-if="!this.$isMobile" class="section-inner mx-auto">
+                <div class="inner-half col-4 mx-3 mx-sm-4 mx-md-5 info-box">
                     <div class="text-uppercase mb-4">
                         <h5 class="mb-3">Starship Uses</h5>
                         <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>

@@ -17,6 +17,7 @@
         <Engine/>
         <PrivateLunar/>
         <StaticImg/>
+        <MoreInfo/>
     </div>
 </template>
 <style scoped>
@@ -41,6 +42,7 @@ const Landing = () => import('./components/landing/landing.vue')
 const Engine = () => import('./components/engine/engine.vue')
 const PrivateLunar = () => import('./components/privateLunar/privateLunar.vue')
 const StaticImg = () => import('./components/staticImg/staticImg.vue')
+const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
 
 export default {
     components: {
@@ -50,7 +52,8 @@ export default {
         Landing,
         Engine,
         PrivateLunar,
-        StaticImg
+        StaticImg,
+        MoreInfo
     },
     data() {
         return {

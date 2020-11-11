@@ -2,8 +2,8 @@
     <div>
         <VDOplate :status="open" @closeTab="closeVDOTab" v-if="open"/>
         <div class="background vh-100 position-relative pointer">
-            <div>
-                <div class="col-12 col-lg-5 bottom-left text-uppercase text-shadow pl-4 pl-lg-5">
+            <div class="section-inner mx-auto">
+                <div class="inner-half col-12 col-lg-4 bottom-left text-uppercase text-shadow mx-3 mx-sm-4 mx-md-5">
                     <div class="font-weight-light h5">Video</div>
                     <div class="font-weight-bold line-height dm-title-2">Falcon Heavy First Flight</div>
                 </div>

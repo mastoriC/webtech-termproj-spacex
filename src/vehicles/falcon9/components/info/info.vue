@@ -4,8 +4,8 @@
             <div class="background background-full vh-100" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
-                    <div v-if="!this.$isMobile">
-                        <div class="col-5 mx-5 pr-5 info-box">
+                    <div v-if="!this.$isMobile" class="section-inner mx-auto">
+                        <div class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 info-box">
                             <div class="text-uppercase mb-5">
                                 <h5 class="mb-3">Falcon 9</h5>
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
@@ -20,8 +20,8 @@
                     </div>
                 </div>
             </div>
-            <div class="px-lg-5">
-                <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-5 offset-lg-0 text-box">
+            <div class="section-inner mx-auto px-lg-5">
+                <div class="inner-half col-10 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
                     <span class="dm-text">
                         Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.
                     </span>

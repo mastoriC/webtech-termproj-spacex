@@ -4,8 +4,8 @@
             <div class="background background-full vh-100 z-0" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
-                    <div v-if="!this.$isMobile">
-                        <div class="col-5 mx-5 pr-5 info-box">
+                    <div v-if="!this.$isMobile" class="section-inner mx-auto">
+                        <div class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 info-box">
                             <div class="text-uppercase mb-5">
                                 <h5 class="mb-3">Falcon Heavy</h5>
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
@@ -16,12 +16,12 @@
                             <SecStg v-else-if="pageNumber===4"/>
                             <Payload v-else-if="pageNumber===5"/>
                         </div>
-                        <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
+                        <CarouselUI :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
                     </div>
                 </div>
             </div>
-            <div class="px-xl-5">
-                <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-5 offset-xl-0 text-box">
+            <div class="section-inner mx-auto px-lg-5">
+                <div class="inner-half col-10 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
                     <span class="dm-text">
                         Falcon Heavy is the most powerful operational rocket in the world by a factor of two. With the ability to lift into orbit nearly 64 metric tons (141,000 lb) Falcon Heavy can lift more than twice the payload of the next closest operational vehicle, the Delta IV Heavy. Falcon Heavy is composed of three Falcon 9 nine-engine cores whose 27 Merlin engines together generate more than 5 million pounds of thrust at liftoff, equal to approximately eighteen 747 aircraft.
                     </span>

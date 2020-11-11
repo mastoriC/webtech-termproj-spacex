@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div class="background vh-100 position-relative px-5" :style="`backgroundImage: url(${currentBg})`">
-            <div v-if="!this.$isMobile" class="col-5 pr-5 middle">
+    <div class="background vh-100 position-relative" :style="`backgroundImage: url(${currentBg})`">
+        <div class="section-inner mx-auto">
+            <div v-if="!this.$isMobile" class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 middle">
                 <Info @clicked="getBg"/>
             </div>
         </div>

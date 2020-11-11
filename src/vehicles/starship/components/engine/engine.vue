@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="background vh-100 position-relative">
-            <div class="section-inner w-100 mx-auto">
-                <div v-if="!this.$isMobile" class="col-5 pl-5 middle">
+            <div class="section-inner mx-auto">
+                <div v-if="!this.$isMobile" class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 middle">
                     <Info/>
                 </div>
             </div>

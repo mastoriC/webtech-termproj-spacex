@@ -1,5 +1,5 @@
 <template>
-    <router-link tag="span" to="/" id="logo" class="navbar-brand pointer p-0 text-white">
+    <router-link tag="a" to="/" href="/" @click="(e)=>{e.preventDefault()}" id="logo" class="navbar-brand pointer p-0 text-white">
         <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
         <title>SpaceX Logo</title>
         <g class="letter_s">
@@ -68,24 +68,26 @@
     height: auto;
 }
 #logo {
-    top: 32px;
-    left: 50px;
-    width: 210px;
-    height: auto;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    margin-top: -5px;
+    margin-left: 15px;
+    transform: translate(-50%,-50%);
+    z-index: 30 !important;
 }
 .fill-white {
     fill: #fff;
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     #logo {
-        left: 50%;
-        top: 50%;
-        width: 150px;
-        margin-top: -5px;
-        margin-left: 15px;
-        transform: translate(-50%,-50%);
-        z-index: 30 !important;
+        top: 32px;
+        left: 50px;
+        width: 210px;
+        height: auto;
+        margin: 0;
+        transform: translate(0, 0);
     }
 }
 </style>

@@ -5,7 +5,7 @@
             For inquiries about our private passenger program, contact
             <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a>
         </div>
-        <div class="my-3">
+        <div class="mt-2 mb-4">
             <btn type="a" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" :newtab="true">{{l.title}}</btn>
         </div>
     </div>

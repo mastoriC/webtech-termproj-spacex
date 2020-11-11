@@ -5,7 +5,7 @@
             <Logo/>
             <ul class="navbar-nav">
                 <li class="nav-item text-uppercase my-auto px-2 px-xl-3" v-for="(l, i) in primaryLinks" :key="`PRI${i}`">
-                    <router-link tag="span" :to="l.link" class="nav-link pointer position-relative p-0 text-white">
+                    <router-link tag="a" :to="l.link" :href="l.link" @click="(e)=>{e.preventDefault()}" class="nav-link pointer position-relative p-0 text-white">
                         {{ l.title }}
                     </router-link>
                 </li>
@@ -274,19 +274,19 @@ export default {
     data() {
         return {
             primaryLinks: [
-                { title: "falcon 9", link: "/vehicles/falcon-9/" },
-                { title: "falcon heavy", link: "/vehicles/falcon-heavy/" },
-                { title: "dragon", link: "/vehicles/dragon/" },
-                { title: "starship", link: "/vehicles/starship/" },
-                { title: "human spaceflight", link: "/human-spaceflight/" },
-                { title: "rideshare", link: "/rideshare/" },
+                { title: "Falcon 9", link: "/vehicles/falcon-9/" },
+                { title: "Falcon Heavy", link: "/vehicles/falcon-heavy/" },
+                { title: "Dragon", link: "/vehicles/dragon/" },
+                { title: "Starship", link: "/vehicles/starship/" },
+                { title: "Human Spaceflight", link: "/human-spaceflight/" },
+                { title: "Rideshare", link: "/rideshare/" },
             ],
             secondaryLinks: [
-                { title: "mission", link: "/mission/" },
-                { title: "launches", link: "/launches/" },
-                { title: "careers", link: "/careers/" },
-                { title: "updates", link: "/updates/" },
-                { title: "shop", link: "https://shop.spacex.com/", external: true },
+                { title: "Mission", link: "/mission/" },
+                { title: "Launches", link: "/launches/" },
+                { title: "Careers", link: "/careers/" },
+                { title: "Updates", link: "/updates/" },
+                { title: "Shop", link: "https://shop.spacex.com/", external: true },
             ],
             isMenuOpen: false,
             posBuffer: window.scrollY
