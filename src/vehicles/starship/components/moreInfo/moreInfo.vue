@@ -2,7 +2,7 @@
     <div class="container text-center py-5">
         <div class="tall-line"></div>
         <div class="mt-5 mb-4">
-            <btn type="a" size="large" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" :newtab="true">{{l.title}}</btn>
+            <btn type="a" large class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" newtab special>{{l.title}}</btn>
         </div>
         <div class="select-container mx-auto mb-5">
             <select class="select-css" @change="selectHandler">

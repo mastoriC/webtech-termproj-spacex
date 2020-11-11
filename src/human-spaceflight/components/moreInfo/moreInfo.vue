@@ -6,7 +6,7 @@
             <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a>
         </div>
         <div class="mt-2 mb-4">
-            <btn type="a" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" :newtab="true">{{l.title}}</btn>
+            <btn type="a" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" newtab special>{{l.title}}</btn>
         </div>
     </div>
 </template>

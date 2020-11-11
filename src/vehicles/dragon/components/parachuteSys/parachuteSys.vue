@@ -6,7 +6,7 @@
                 <div class="mb-5">
                     The Dragon spacecraft is equipped with two drogue parachutes to stabilize the spacecraft following reentry and four main parachutes to further decelerate the spacecraft prior to landing.
                 </div>
-                <btn type="a" target="https://youtu.be/ulVZds71CZQ" :newtab="true" @click.native="pushTab">Watch Video</btn>
+                <btn type="a" target="https://youtu.be/ulVZds71CZQ" newtab @click.native="pushTab">Watch Video</btn>
             </div>
             <div class="col-12 col-md-7 p-0 p-lg-0 order-first order-md-last">
                 <img class="w-100 h-100" src="https://www.spacex.com/static/images/dragon/parachute.webp">

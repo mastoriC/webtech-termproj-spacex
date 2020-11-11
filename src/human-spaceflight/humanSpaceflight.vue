@@ -9,7 +9,7 @@
                     Making life multiplanetary
                 </div>
                 <div class="mt-4">
-                    <btn type="router-link" size="large" :class="(opacity>=1)?`event-auto`:`event-none`" target="/updates/crew-demo-2-mission-update-5-30-2020/">View Our NASA DEMO-2 Mission</btn>
+                    <btn type="router-link" large :class="(opacity>=1)?`event-auto`:`event-none`" target="/updates/crew-demo-2-mission-update-5-30-2020/">View Our NASA DEMO-2 Mission</btn>
                 </div>
             </div>
         </div>

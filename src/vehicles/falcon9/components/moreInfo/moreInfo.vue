@@ -2,11 +2,11 @@
     <div class="container text-center py-5">
         <div class="tall-line"></div>
         <div class="text-grey text">
-            For information about our launch services, contact
-            <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a>
+            For information about our launch services, 
+            <nobr>contact <a class="text-link" href="mailto:sales@spacex.com">sales@spacex.com</a></nobr>
         </div>
         <div class="my-3">
-            <btn type="a" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" :newtab="true">{{l.title}}</btn>
+            <btn type="a" class="m-3" v-for="(l, i) in links" :key="i" :target="l.url" newtab special>{{l.title}}</btn>
         </div>
     </div>
 </template>

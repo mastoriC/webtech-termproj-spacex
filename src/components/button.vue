@@ -1,5 +1,5 @@
 <template>
-    <component :is="type" :tag="tag" :to="to" :href="to" :target="tabTarget" class="d-inline-block btn-outline position-relative" :class="(size)?'px-5':'px-3'">
+    <component :is="type" :tag="tag" :to="to" :href="to" :target="tabTarget" class="btn-outline position-relative" :class="[(special)?'d-block d-sm-inline-block':'d-inline-block', (large)?'px-5':'px-3']">
         <div class="on-hover"></div>
         <span class="text text-center text-uppercase font-weight-bold"><slot/></span>
     </component>
@@ -55,18 +55,10 @@ export default {
             type: String,
             default: 'span'
         },
-        size: {
-            type: String,
-            default: null
-        },
-        target: {
-            type: String,
-            default: null
-        },
-        newtab: {
-            type: Boolean,
-            default: false
-        }
+        target: String,
+        newtab: Boolean,
+        large: Boolean,
+        special: Boolean
     },
     computed: {
         tag() {
