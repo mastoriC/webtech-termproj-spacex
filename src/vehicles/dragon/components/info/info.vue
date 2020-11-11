@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div>
-        <div v-if="this.$isMobile" class="my-5 container">
-            <div class="col-12">
+        <div v-if="this.$isMobile" class="section-inner mx-auto my-5">
+            <div class="inner-half col-12">
                 <div class="mb-4">
                     <div class="text-uppercase d-inline-block">
                         <h6 class="mb-0">DRAGON</h6>
@@ -95,7 +95,7 @@ export default {
             secNumber: 1,
             titles: ["Overview", "Trunk", "Capsule"],
             bgFirst: (this.$isMobile) ?
-            "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Lines_Mobile.webp":
+            "https://www.spacex.com/static/images/dragon/mobile/DragonTrunk_Lines_Mobile.webp":
             "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Lines_Desktop.webp",
             bgs: JSON_bgs
         }

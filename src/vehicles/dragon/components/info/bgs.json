@@ -14,15 +14,15 @@
     ],
     "mobile": [
         [
-            "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/dragon/mobile/DragonTrunk_Render_Mobile.webp"
         ],
         [
-            "https://www.spacex.com/static/images/dragon/desktop/Trunk_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/dragon/mobile/Trunk_Render_Mobile.webp"
         ],
         [
-            "https://www.spacex.com/static/images/dragon/desktop/Dragon_Render_Mobile.webp",
-            "https://www.spacex.com/static/images/dragon/desktop/DragonEscape_Mobile.webp",
-            "https://www.spacex.com/static/images/dragon/desktop/DragonDraco_Mobile.webp"
+            "https://www.spacex.com/static/images/dragon/mobile/Dragon_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/dragon/mobile/DragonEscape_Mobile.webp",
+            "https://www.spacex.com/static/images/dragon/mobile/DragonDraco_Mobile.webp"
         ]
     ]
 }
