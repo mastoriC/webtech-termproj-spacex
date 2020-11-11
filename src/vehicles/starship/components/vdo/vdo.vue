@@ -18,12 +18,17 @@
 </template>
 <style scoped>
 .background {
-    background: url("https://www.spacex.com/static/images/backgrounds/starship_video.jpg");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/starship_video-mobile.webp");
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
     background-size: auto 100%;
     color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+    .background {
+        background-image: url("https://www.spacex.com/static/images/backgrounds/starship_video.jpg");
+    }
 }
 .middle-center {
     position: absolute;

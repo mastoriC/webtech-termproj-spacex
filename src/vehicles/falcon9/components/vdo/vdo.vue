@@ -18,12 +18,17 @@
 </template>
 <style scoped>
 .background {
-    background: url("https://www.spacex.com/static/images/backgrounds/f9_video.webp");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/f9_video.webp");
     background-repeat: no-repeat;
     background-color: black;
-    background-position: center;
+    background-position: 53% 50%;
     background-size: auto 100%;
     color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+    .background {
+        background-position: center;
+    }
 }
 .middle-center {
     position: absolute;
