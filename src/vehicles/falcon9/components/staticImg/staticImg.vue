@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div class="vh-90 position-relative" style="overflow: hidden;" :style="`background: center/cover no-repeat url(${bgUrl})`">
-        </div>
+        <div class="vh-90 position-relative" style="overflow: hidden;" :style="`background: center/cover no-repeat url(${bgUrl})`"></div>
         <StaticCarousel class="px-3 px-lg-5 bg-black" :curSelected="curBgNum" @selectImg="changeImg"/>
     </div>
 </template>

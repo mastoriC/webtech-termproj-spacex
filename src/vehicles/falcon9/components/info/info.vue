@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div v-if="this.$isMobile" class="section-inner my-5 container">
+        <div v-if="this.$isMobile" class="section-inner mx-auto my-5">
             <div class="inner-half col-12">
                 <div class="mb-4">
                     <div class="text-uppercase d-inline-block">
