@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="background vh-100" :style="`background-position: 50% ${bgPos};`">
+        <div class="overflow-hidden">
+            <div class="background vh-100" :style="`background-position: 50% ${bgPos};transform: scale(${Math.max(1+multiplier/100)}) rotate3d(0, 0, 0.75, ${2 * multiplier}deg;`"></div>
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="dm-title font-weight-bold animate__animated animate__fadeInUp animate__fast">
                     Dragon
@@ -61,7 +62,8 @@ export default {
         return {
             opacity: 1,
             scrollPos: window.scrollY,
-            bgPos: "50%"
+            bgPos: "50%",
+            multiplier: 0
         }
     },
     created() {
@@ -73,8 +75,11 @@ export default {
     methods: {
         scrollHandler(event) {
             var height = window.innerHeight / 10;
-            this.opacity = (height - window.scrollY) / height;
-            this.bgPos = (window.scrollY / 4) + "px";
+            if(window.scrollY < window.innerHeight) {
+                this.opacity = (height - window.scrollY) / height;
+                this.multiplier = (window.scrollY / 200);
+                this.bgPos = (window.scrollY / 4) + "px";
+            }
             this.scrollPos = window.scrollY;
         }
     }
