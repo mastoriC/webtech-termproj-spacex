@@ -2,7 +2,7 @@
     <div>
         <div class="background vh-100 position-relative" :class="(this.$isMobile)?'mobile':''" :style="`backgroundImage: url(${currentBg})`">
             <div class="section-inner mx-auto">
-                <div v-if="!this.$isMobile" class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 middle">
+                <div v-if="!this.$isMobile" class="inner-half col-5 px-3 px-sm-4 px-md-5 middle">
                     <Info @clicked="getBg"/>
                 </div>
             </div>

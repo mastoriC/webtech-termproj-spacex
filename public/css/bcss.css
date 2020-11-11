@@ -58,9 +58,6 @@ a, a:hover {
 .section-inner {
     max-width: 1400px;
 }
-.section-inner > .inner-half {
-    padding: 0;
-}
 @media screen and (min-width: 576px) {
     .section-inner > .inner-half {
         max-width: 420px;

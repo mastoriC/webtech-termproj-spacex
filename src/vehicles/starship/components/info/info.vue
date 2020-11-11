@@ -5,7 +5,7 @@
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
                     <div v-if="!this.$isMobile" class="section-inner mx-auto">
-                        <div class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 info-box">
+                        <div class="inner-half col-5 px-3 px-sm-4 px-md-5 info-box">
                             <div class="text-uppercase mb-5">
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                             </div>
@@ -21,7 +21,7 @@
 
             
             <div class="section-inner mx-auto px-lg-5">
-                <div class="inner-half col-10 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
+                <div class="inner-half col-10 p-0 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
                     <span class="dm-text">
                         SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond. Starship will be the world’s most powerful launch vehicle ever developed, with the ability to carry in excess of 100 metric tonnes to Earth orbit.
                     </span>

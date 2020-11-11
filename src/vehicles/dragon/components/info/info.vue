@@ -5,7 +5,7 @@
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
                     <div v-if="!this.$isMobile" class="section-inner mx-auto">
-                        <div class="inner-half col-5 mx-3 mx-sm-4 mx-md-5 info-box">
+                        <div class="inner-half col-5 px-3 px-sm-4 px-md-5 info-box">
                             <div class="text-uppercase mb-5">
                                 <h5 class="mb-3">DRAGON</h5>
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="section-inner mx-auto px-lg-5">
-                <div class="inner-half col-10 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
+                <div class="inner-half col-10 p-0 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
                     <span class="dm-text">
                         The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
                     </span>

@@ -1,7 +1,7 @@
 <template>
     <div class="section-inner mx-auto">
         <div class="py-5 my-4">
-            <div class="row mx-3 mx-sm-4 mx-md-5">
+            <div class="row px-3 px-sm-4 px-md-5">
                 <div class="col-12 col-lg-7 p-lg-0">
                     <img class="w-100 h-100" src="https://www.spacex.com/static/images/starship/private_lunar_mission.webp">
                 </div>
