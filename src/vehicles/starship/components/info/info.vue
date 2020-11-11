@@ -5,7 +5,7 @@
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
                     <div v-if="!this.$isMobile" class="section-inner mx-auto">
-                        <div class="inner-half col-5 px-3 px-sm-4 px-md-5 info-box">
+                        <div class="inner-half col-5 mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0 info-box">
                             <div class="text-uppercase mb-5">
                                 <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                             </div>

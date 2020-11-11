@@ -1,13 +1,13 @@
 <template>
     <div class="section-inner mx-auto">
         <div class="row h-100 m-0">
-            <div class="col-12 col-md-7 px-3 px-sm-4 px-md-5">
+            <div class="col-12 col-md-7 mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0">
                 <video autoplay loop muted preload="auto" autobuffer="true" width="100%" height="100%">
                     <source type="video/webm" src="https://www.spacex.com/media/fh_performance.webm">
                     <source type="video/mp4" src="https://www.spacex.com/media/fh_performance.mp4">
                 </video>
             </div>
-            <div class="col-12 col-md-5 px-3 px-sm-4 px-md-5 my-auto">
+            <div class="col-12 col-md-5 mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0 my-auto">
                 <div class="huge text-uppercase font-weight-bold mt-4 mt-lg-0 mb-4">Unmatched<br>Performance</div>
                 <div>
                     With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying. By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747 aircraft at full power. Falcon Heavy can lift the equivalent of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.
