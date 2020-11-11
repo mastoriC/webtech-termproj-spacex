@@ -12,6 +12,7 @@
         </div>
         <Info/>
         <Video/>
+        <Usage/>
         <Landing/>
         <Engine/>
         <PrivateLunar/>
@@ -35,6 +36,7 @@
 <script>
 const Info = () => import('./components/info/info.vue')
 const Video = () => import('./components/vdo/vdo.vue')
+const Usage = () => import('./components/use/info.vue')
 const Landing = () => import('./components/landing/landing.vue')
 const Engine = () => import('./components/engine/engine.vue')
 const PrivateLunar = () => import('./components/privateLunar/privateLunar.vue')
@@ -44,6 +46,7 @@ export default {
     components: {
         Info,
         Video,
+        Usage,
         Landing,
         Engine,
         PrivateLunar,
