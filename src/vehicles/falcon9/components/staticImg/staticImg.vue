@@ -29,7 +29,7 @@ export default {
     },
     computed: {
         bgUrl() {
-            return `https://www.spacex.com/static/images/falcon-9/F9_${this.curBgNum}.webp`
+            return `https://www.spacex.com/static/images/falcon-9/F9_${this.curBgNum}${(this.$isMobile)?"_mobile":""}.webp`
         }
     }
 }
