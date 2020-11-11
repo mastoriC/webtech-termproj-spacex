@@ -2,7 +2,7 @@
     <div class="container text-center py-4 px-0">
         <div class="small text-uppercase condense my-2">
             <div class="d-dynamic mb-2 mb-lg-auto mr-auto mr-lg-4 text-grey font-weight-light">SpaceX © 2020</div>
-            <div class="d-inline-block mx-3 mx-lg-4 font-weight-bold text-center py-1" v-for="(l, i) in links" :key="i">
+            <div class="d-inline-block mx-2 mx-md-3 mx-lg-4 font-weight-bold text-center py-1" v-for="(l, i) in links" :key="i">
                 <a :href="l.link" target="_blank">{{l.title}}</a>
             </div>
         </div>
