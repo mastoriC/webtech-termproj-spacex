@@ -44,6 +44,7 @@
 .play-area {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .btn-play {
     transform: scale(3.75);
