@@ -16,8 +16,8 @@
                 <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
             </div>
         </div>
-        <div v-if="this.$isMobile" class="my-5 container">
-            <div class="col-12">
+        <div v-if="this.$isMobile" class="section-inner mx-auto my-5">
+            <div class="inner-half col-12">
                 <div class="mb-4">
                     <div class="text-uppercase d-inline-block">
                         <h6 class="mb-0">Falcon 9</h6>
