@@ -1,7 +1,7 @@
 <template>
     <div class="section-inner mx-auto">
-        <div class="row h-100 mx-3 mx-sm-4 mx-md-5">
-            <div class="col-12 col-md-7 p-lg-0">
+        <div class="row h-100 px-3 px-sm-4 px-md-5">
+            <div class="col-12 col-md-7">
                 <video autoplay loop muted preload="auto" autobuffer="true" width="100%" height="100%">
                     <source type="video/webm" src="https://www.spacex.com/media/fh_performance.webm">
                     <source type="video/mp4" src="https://www.spacex.com/media/fh_performance.mp4">

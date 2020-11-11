@@ -3,7 +3,7 @@
         <VDOplate :status="open" @closeTab="closeVDOTab" v-if="open"/>
         <div class="background vh-100 position-relative pointer">
             <div class="section-inner mx-auto">
-                <div class="inner-half col-12 col-lg-4 bottom-left text-uppercase text-shadow mx-3 mx-sm-4 mx-md-5">
+                <div class="inner-half col-12 col-lg-4 bottom-left text-uppercase text-shadow px-3 px-sm-4 px-md-5">
                     <div class="font-weight-light h5">Video</div>
                     <div class="font-weight-bold line-height dm-title-2">Falcon Heavy First Flight</div>
                 </div>
