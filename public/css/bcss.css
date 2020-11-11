@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    /* overflow-x: hidden; */
     font-family: 'D-DIN', sans-serif;
     color: white;
     background: black;
@@ -58,11 +59,11 @@ a, a:hover {
     max-width: 1400px;
 }
 .section-inner > .inner-half {
-    max-width: 420px;
+    padding: 0;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     .section-inner > .inner-half {
-        padding: 0;
+        max-width: 420px;
     }
 }
 @media screen and (min-width: 1200px) {
