@@ -1,0 +1,28 @@
+{
+    "desktop": [
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/Trunk_Render_Desktop.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/Dragon_Render_Desktop.webp",
+            "https://www.spacex.com/static/images/dragon/desktop/DragonEscape_Desktop.webp",
+            "https://www.spacex.com/static/images/dragon/desktop/DragonDraco_Desktop.webp"
+        ]
+    ],
+    "mobile": [
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/Trunk_Render_Mobile.webp"
+        ],
+        [
+            "https://www.spacex.com/static/images/dragon/desktop/Dragon_Render_Mobile.webp",
+            "https://www.spacex.com/static/images/dragon/desktop/DragonEscape_Mobile.webp",
+            "https://www.spacex.com/static/images/dragon/desktop/DragonDraco_Mobile.webp"
+        ]
+    ]
+}

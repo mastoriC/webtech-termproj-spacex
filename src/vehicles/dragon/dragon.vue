@@ -10,6 +10,13 @@
                 </div>
             </div>
         </div>
+        <Stat/>
+        <Information/>
+        <VDO/>
+        <HumanSpaceFlight/>
+        <Engine/>
+        <ParachuteSys/>
+        <StaticIMG/>
     </div>
 </template>
 <style scoped>
@@ -32,7 +39,24 @@
 }
 </style>
 <script>
+const Stat = () => import('./components/stat/stat.vue')
+const Information = () => import('./components/info/info.vue')
+const VDO = () => import('./components/vdo/vdo.vue')
+const HumanSpaceFlight = () => import('./components/humanSpaceFlight/humanSpaceFlight.vue')
+const Engine = () => import('./components/engine/engine.vue')
+const ParachuteSys = () => import('./components/parachuteSys/parachuteSys.vue')
+const StaticIMG = () => import('./components/staticImg/staticImg.vue')
+
 export default {
+    components: {
+        Stat,
+        Information,
+        VDO,
+        HumanSpaceFlight,
+        Engine,
+        ParachuteSys,
+        StaticIMG
+    },
     data() {
         return {
             opacity: 1,
