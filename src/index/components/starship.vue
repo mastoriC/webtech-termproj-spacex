@@ -23,7 +23,7 @@
     bottom: 10vh;
 }
 .text-shadow {
-    text-shadow: 0px 0px 16px #000000;
+    text-shadow: 0px 0px 7px #000000;
 }
 .line-height {
     line-height: 1.125em;
