@@ -18,8 +18,7 @@ const UpdatesRoutes = require('./updates/routes.js')
 Vue.use(Router)
 
 export const router = new Router({
-    mode: "history",
-    base: "/webtech-termproj-spacex/",
+    mode: "hash",
     routes: [
         {
             name: "Index",
