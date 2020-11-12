@@ -8,7 +8,7 @@
             </div>
         </div>
         <div v-if="this.$isMobile" class="section-inner mx-auto my-5">
-            <div class="inner-half col-12">
+            <div class="col-12 px-3 px-sm-4 px-md-5">
                 <Info @clicked="getBg"/>
             </div>
         </div>

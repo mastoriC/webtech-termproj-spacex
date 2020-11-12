@@ -40,7 +40,7 @@ export default {
                         "NUMBER OF ENGINES": "16",
                         "THRUST IN VACUUM": ["400 N", "90 lbf"]
                     },
-                    bg: (this.$isMobile) ? "https://www.spacex.com/static/images/dragon/mobile/Draco.webp" : "https://www.spacex.com/static/images/dragon/desktop/Draco.webp"
+                    bgName: "Draco"
                 },
                 {
                     title: "Super Draco",
@@ -49,7 +49,7 @@ export default {
                         "NUMBER OF ENGINES": "8",
                         "THRUST IN VACUUM": ["73 kN", "16,400 lbf"]
                     },
-                    bg: (this.$isMobile) ? "https://www.spacex.com/static/images/dragon/mobile/SuperDraco.webp" : "https://www.spacex.com/static/images/dragon/desktop/SuperDraco.webp"
+                    bgName: "SuperDraco"
                 },
             ]
         }
@@ -58,7 +58,7 @@ export default {
         changeItem(index) {
             if (this.selected !== index) {
                 this.selected = (this.selected === 0) ? 1 : 0;
-                this.$emit("clicked", this.engines[this.selected].bg)
+                this.$emit("clicked", this.bg)
             }
         },
         getDesc() {
@@ -68,8 +68,13 @@ export default {
             return this.engines[this.selected].details
         }
     },
+    computed: {
+        bg() {
+            return `https://www.spacex.com/static/images/dragon/${(this.$isMobile)?"mobile":"desktop"}/${this.engines[this.selected].bgName}.webp`
+        }
+    },
     created() {
-        this.$emit("clicked", this.engines[this.selected].bg)
+        this.$emit("clicked", this.bg)
     }
 }
 </script>

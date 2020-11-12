@@ -1,68 +1,95 @@
 <template>
-    <div>
-        <div class="position-relative" ref="bg" style="height: 200vh">
-            <div class="background background-full vh-100" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
-                <div class="background-sec background-full vh-100"
-                :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
-                    <div v-if="!this.$isMobile" class="section-inner mx-auto">
-                        <div class="inner-half col-5 mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0 info-box">
-                            <div class="text-uppercase mb-5">
-                                <h5 class="mb-3">DRAGON</h5>
-                                <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
-                            </div>
-                            <Overview v-if="pageNumber===1"/>
-                            <Trunk v-else-if="pageNumber===2"/>
-                            <Capsule v-else-if="pageNumber===3" @selectSec="changeSec"/>
+    <div class="position-relative" ref="bg" style="min-height: 200vh">
+        <div class="background background-full" :class="(this.$isMobile)?'mobile':''" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
+            <div class="background-sec background-full"
+            :class="(this.$isMobile)?'mobile':''"
+            :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
+                <div v-if="!this.$isMobile" class="section-inner mx-auto">
+                    <div class="inner-half col-5 mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0 info-box">
+                        <div class="text-uppercase mb-5">
+                            <h5 class="mb-3">DRAGON</h5>
+                            <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
                         </div>
-                        <CarouselUI :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
+                        <Overview v-if="pageNumber===1"/>
+                        <Trunk v-else-if="pageNumber===2"/>
+                        <Capsule v-else-if="pageNumber===3" @selectSec="changeSec"/>
                     </div>
+                    <CarouselUI :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
                 </div>
             </div>
-            <div class="section-inner mx-auto px-lg-5">
-                <div class="inner-half col-10 p-0 offset-1 col-md-8 offset-md-2 col-lg-5 col-xl-4 offset-lg-0 text-box">
+            <div v-if="this.$isMobile" class="section-inner mx-auto py-5 position-sticky">
+                <div class="col-12 px-3 px-sm-4 px-md-5">
+                    <div class="mb-4">
+                        <div class="text-uppercase d-inline-block">
+                            <h6 class="mb-0">DRAGON</h6>
+                            <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
+                        </div>
+                        <div class="float-right">
+                            <CarouselUI :style="`opacity: ${opacity};`" :class="(this.opacity>=1) ? `event-auto` : `event-none`" :curSelected="pageNumber" @selectPg="changePg"/>
+                        </div>
+                    </div>
+                    <Overview v-if="pageNumber==1"/>
+                    <Trunk v-else-if="pageNumber==2"/>
+                    <Capsule v-else-if="pageNumber==3" @selectSec="changeSec"/>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="section-inner mx-auto px-4 px-sm-0 px-lg-5">
+                <div class="inner-half px-5 px-sm-0 mx-auto mx-lg-0">
                     <span class="dm-text">
                         The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
                     </span>
                 </div>
             </div>
         </div>
-        <div v-if="this.$isMobile" class="section-inner mx-auto my-5">
-            <div class="inner-half col-12">
-                <div class="mb-4">
-                    <div class="text-uppercase d-inline-block">
-                        <h6 class="mb-0">DRAGON</h6>
-                        <div class="h1 font-weight-bold">{{titles[pageNumber-1]}}</div>
-                    </div>
-                    <div class="float-right">
-                        <CarouselUI :curSelected="pageNumber" @selectPg="changePg"/>
-                    </div>
-                </div>
-                <Overview v-if="pageNumber==1"/>
-                <Trunk v-else-if="pageNumber==2"/>
-                <Capsule v-else-if="pageNumber==3" @selectSec="changeSec"/>
-            </div>
-        </div>
     </div>
 </template>
 <style scoped>
-.background {
-    background-position: center;
+.background,
+.background-sec {
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: auto 100vh;
-    position: sticky;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
     top: 0;
+}
+.background.mobile,
+.background-sec.mobile {
+    background-size: auto 500px;
+}
+.background {
+    position: sticky;
 }
 .text-box {
     position: absolute;
-    top: 25%;
     transform: translateY(-50%);
+    top: 260px;
+    width: 100%;
 }
-.background-sec {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100vh;
-    position: relative;
-    top: 0;
+.text-box .dm-text {
+    line-height: 25px;
+}
+@media screen and (min-width: 576px) {
+    .background.mobile,
+    .background-sec.mobile {
+        background-size: auto 600px;
+        min-height: 600px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .background,
+    .background-sec {
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .text-box {
+        top: 25%;
+    }
+    .text-box .dm-text {
+        line-height: 36px;
+    }
 }
 .info-box {
     position: absolute;
@@ -94,16 +121,12 @@ export default {
             pageNumber: 1,
             secNumber: 1,
             titles: ["Overview", "Trunk", "Capsule"],
-            bgFirst: (this.$isMobile) ?
-            "https://www.spacex.com/static/images/dragon/mobile/DragonTrunk_Lines_Mobile.webp":
-            "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Lines_Desktop.webp",
             bgs: JSON_bgs
         }
     },
     mounted() {
         var bg = this.$refs.bg
         this.actHeight = bg.scrollHeight - (bg.scrollHeight * (window.screen.availWidth / 50000))
-        console.log(this.actHeight, bg.scrollHeight, window.screen.availWidth)
         if (window.scrollY > this.actHeight) {
             this.opacity = 1;
         }
@@ -136,6 +159,7 @@ export default {
                     }
                 }, 1);
                 (this.pageNumber > 1) ? this.pageNumber-- : 0;
+                this.secNumber = 1
             }
             this.lastPos = window.scrollY
         },
@@ -149,12 +173,17 @@ export default {
     },
     computed: {
         selectBgSize() {
-            if (window.innerWidth >= 992) {
-                return this.bgs.desktop
-            } else {
+            if (this.$isMobile) {
                 return this.bgs.mobile
+            } else {
+                return this.bgs.desktop
             }
-        }
+        },
+        bgFirst() {
+            return (this.$isMobile)
+                ? "https://www.spacex.com/static/images/dragon/mobile/DragonTrunk_Lines_Mobile.webp"
+                : "https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Lines_Desktop.webp"
+        } 
     }
 }
 </script>

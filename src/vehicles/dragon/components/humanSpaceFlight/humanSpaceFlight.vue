@@ -17,8 +17,8 @@
 .background {
     background-repeat: no-repeat;
     background-color: black;
-    background-position: center;
-    background-size: auto 100%;
+    background-position: center center;
+    background-size: cover;
     color: #ffffff;
 }
 .middle-right {
@@ -26,6 +26,7 @@
     top: 30%;
     right: 0;
     transform: translatey(-50%);
+    width: 50%;
 }
 .text {
     line-height: 1.75em;
@@ -33,9 +34,9 @@
 </style>
 <script>
 export default {
-    data() {
-        return {
-            bg: (this.$isMobile)?"https://www.spacex.com/static/images/backgrounds/dragon_humans-mobile.webp":"https://www.spacex.com/static/images/backgrounds/dragon_humans.webp"
+    computed: {
+        bg() {
+            return `https://www.spacex.com/static/images/backgrounds/dragon_humans${(this.$isMobile)?"-mobile":""}.webp`
         }
     }
 }

@@ -46,16 +46,16 @@ export default {
         },
         statsIncreament() {
             var mostValStat = this.findMaxVal()
-            var timer = setInterval(() => {
-                this.stats.forEach(stat => {
+            this.stats.forEach(stat => {
+                var timer = setInterval(() => {
                     if (stat.cur < stat.val) {
                         stat.cur++
                     }
                     if (mostValStat.cur === mostValStat.val) {
                         clearInterval(timer)
                     }
-                })
-            }, 15)
+                }, 15)
+            })
         },
         scrollHandler() {
             var num = (window.scrollY + window.innerHeight) - this.offsetTop
