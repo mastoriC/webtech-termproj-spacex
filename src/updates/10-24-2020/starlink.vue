@@ -15,7 +15,7 @@
                     <div class="text-grey h5 mb-4">OCTOBER 24, 2020</div>
                     <div class="col-6 h1 font-weight-bold px-0">Starlink Mission - SpaceX’s 100th Successful Flight</div>
                 </div>
-                <div class="row my-5 mx-2">
+                <div class="row my-5">
                     <div class="col">
                         On Saturday, October 24 at 11:31 a.m. EDT, 11:31 UTC, SpaceX’s Falcon 9 rocket launched 60 Starlink satellites to orbit from Space Launch Complex 40 (SLC-40) at Cape Canaveral Air Force Station in Florida.
                         <br><br>

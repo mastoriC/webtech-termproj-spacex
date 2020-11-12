@@ -15,7 +15,7 @@
                     <div class="text-grey h5 mb-4">OCTOBER 06, 2020</div>
                     <div class="col-6 h1 font-weight-bold px-0">Starlink Mission</div>
                 </div>
-                <div class="row my-5 mx-2">
+                <div class="row my-5">
                     <div class="col">
                         On Tuesday, October 6 at 7:29 a.m. EDT, 11:29 UTC, SpaceX launched 60 Starlink satellites from Launch Complex 39A (LC-39A) at Kennedy Space Center in Florida. Falcon 9’s first stage previously supported launch of Crew Dragon’s first flight to the International Space Station with NASA astronauts onboard and the ANASIS-II mission. Following stage separation, SpaceX landed Falcon 9’s first stage on the “Of Course I Still Love You” droneship, which was stationed in the Atlantic Ocean. One of Falcon 9’s fairing halves supported two previous Starlink launches, and Ms. Tree successfully caught that fairing half after launch. The Starlink satellites deployed approximately 1 hour and 1 minute after liftoff.
                         <br><br>

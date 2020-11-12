@@ -15,7 +15,7 @@
                     <div class="text-grey h5 mb-4">OCTOBER 18, 2020</div>
                     <div class="col-6 h1 font-weight-bold px-0">Starlink Mission</div>
                 </div>
-                <div class="row my-5 mx-2">
+                <div class="row my-5">
                     <div class="col">
                         On Sunday, October 18 at 8:25 a.m. EDT, 12:25 UTC, SpaceX launched 60 Starlink satellites from Launch Complex 39A (LC-39A) at Kennedy Space Center in Florida.
                         <br><br>

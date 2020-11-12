@@ -15,7 +15,7 @@
                     <div class="text-grey h5 mb-4">NOVEMBER 05, 2020</div>
                     <div class="col-6 h1 font-weight-bold px-0">GPS III Space Vehicle 04 Mission</div>
                 </div>
-                <div class="row my-5 mx-2">
+                <div class="row my-5">
                     <div class="col">
                         <div class="my-4">
                             On Thursday, November 5 at 6:24 p.m. EST, Falcon 9 completed its second mission this year for the United States Space Force when it launched the GPS III Space Vehicle 04 from Space Launch Complex 40 (SLC-40) at Cape Canaveral Air Force Station in Florida. Following stage separation, SpaceX landed Falcon 9’s first stage on the “Of Course I Still Love You” droneship, which was stationed in the Atlantic Ocean. The spacecraft deployed approximately 1 hour and 29 minutes after liftoff.
