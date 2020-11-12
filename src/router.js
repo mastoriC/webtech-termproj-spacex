@@ -19,6 +19,7 @@ Vue.use(Router)
 
 export const router = new Router({
     mode: "history",
+    base: "/webtech-termproj-spacex/",
     routes: [
         {
             name: "Index",
