@@ -80,3 +80,6 @@ a, a:hover {
 .overflow-hidden {
     overflow: hidden
 }
+.object-fit {
+    object-fit: cover;
+}

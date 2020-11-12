@@ -1,41 +1,30 @@
 {
     "desktop": [
         [
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Fairings_Render_Desktop.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__SATELLITE.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9S1_Render_Desktop.webp","https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Engines_Render_Desktop.webp",
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9S1Legs_Render_Desktop.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__ISS.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9S2_Render_Desktop.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__MOON.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9Interstage_Render_Desktop.webp"
-        ],
-        [
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9SoloFairings_Render_Desktop.webp",
-            "https://www.spacex.com/static/images/falcon-9/desktop/WebsiteF9SoloDragon_Render_Desktop.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__INTERPLANETARY.gif"
         ]
     ],
     "mobile": [
         [
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9Fairings_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__SATELLITE_mobile.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9S1_Render_Mobile.webp",
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9Engines_Render_Mobile.webp",
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9S1Legs_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__ISS_mobile.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9S2_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__MOON_mobile.gif"
         ],
         [
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9Interstage_Render_Mobile.webp"
-        ],
-        [
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9SoloFairings_Render_Mobile.webp",
-            "https://www.spacex.com/static/images/falcon-9/mobile/WebsiteF9SoloDragon_Render_Mobile.webp"
+            "https://www.spacex.com/static/images/starship/CAPABILITIES__INTERPLANETARY_mobile.gif"
         ]
     ]
 }
