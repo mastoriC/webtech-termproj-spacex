@@ -9,6 +9,7 @@ const NasaLunar = () => import('./05-01-2020/nasa.vue')
 const Starlink09032020 = () => import('./09-03-2020/starlink.vue')
 const Starlink10062020 = () => import('./10-06-2020/starlink.vue')
 const Starlink10182020 = () => import('./10-18-2020/starlink.vue')
+const Starlink10242020 = () => import('./10-24-2020/starlink.vue')
 
 module.exports = [
     {
@@ -33,9 +34,15 @@ module.exports = [
         }
     },
     {
-        name: "Starlink-10182020-Mission",
         path: "starlink-mission-10-18-2020",
         component: Starlink10182020,
+        meta: {
+            title: "SpaceX - Updates"
+        }
+    },
+    {
+        path: "starlink-mission-10-24-2020",
+        component: Starlink10242020,
         meta: {
             title: "SpaceX - Updates"
         }

@@ -21,7 +21,7 @@
                 <div class="mx- row">
                     <div v-for="(article, index) in smallLog" :key="index" class="py-5" :class="(article.type==`big`)?`col-12`:`col-6`">
                         <div class="e3by2 mb-4">
-                            <img class="img-cover w-100 h-100" :src="article.img">
+                            <router-link tag="img" :to="article.link" class="img-cover w-100 h-100" :src="article.img"/>
                         </div>
                         <div>
                             <div class="text-grey">{{article.date}}</div>
