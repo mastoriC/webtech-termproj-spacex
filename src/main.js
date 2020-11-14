@@ -3,6 +3,7 @@ import App from './App.vue'
 import { router } from './router.js'
 
 import Button from '@/components/button.vue'
+import PlayArrow from '@/components/playArrow.vue'
 
 // Vue.prototype.$isMobileXL = function () { return (window.innerWidth < 1200) }
 // Vue.prototype.$isMobile = function () { return (window.innerWidth < 992) }
@@ -43,6 +44,7 @@ Vue.mixin({
 })
 
 Vue.component('btn', Button)
+Vue.component('play-arrow', PlayArrow)
 
 new Vue({
     el: "#app",

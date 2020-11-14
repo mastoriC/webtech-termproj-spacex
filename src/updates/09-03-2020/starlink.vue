@@ -7,7 +7,7 @@
                     <div class="embed-responsive embed-responsive-21by9">
                         <img class="embed-responsive-item w-100 object-fit" src="https://www.spacex.com/static/images/updates/starlink_11_dekstop.jpg">
                         <div class="middle-center">
-                            <div class="btn-play">▶</div>
+                            <div class="btn-play"><play-arrow /></div>
                         </div>
                     </div>
                 </div>

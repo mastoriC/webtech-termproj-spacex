@@ -13,7 +13,7 @@
                 <div class="col-12 col-md-7 px-3 px-sm-4 px-md-5 order-first order-md-last">
                     <div class="w-100 parachute play-area" @click="pushTab">
                         <div class="middle-center">
-                            <div class="btn-play transition-4">▶</div>
+                            <play-arrow class="btn-play transition-4"/>
                         </div>
                 </div>
                 </div>
@@ -46,11 +46,8 @@
     height: 100%;
     cursor: pointer;
 }
-.btn-play {
-    transform: scale(3.75);
-}
 .play-area:hover .btn-play {
-    transform: scale(3);
+    transform: translate(-50%,-50%) scale3d(.8,.8,.8);
 }
 </style>
 <script>

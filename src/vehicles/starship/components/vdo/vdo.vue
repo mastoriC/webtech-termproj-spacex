@@ -10,7 +10,7 @@
             </div>
             <div class="play-area" v-on:click="pushTab">
                 <div class="middle-center">
-                    <div class="btn-play transition-4">▶</div>
+                    <play-arrow class="btn-play transition-4"/>
                 </div>
             </div>
         </div>
@@ -47,11 +47,8 @@
     width: 100%;
     height: 100%;
 }
-.btn-play {
-    transform: scale(3.75);
-}
 .play-area:hover .btn-play {
-    transform: scale(3);
+    transform: translate(-50%,-50%) scale3d(.8,.8,.8);
 }
 .line-height {
     line-height: 1.125em;
