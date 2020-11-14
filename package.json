@@ -7,6 +7,9 @@
     "vue": "^2.6.12",
     "vue-router": "^3.4.6"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
