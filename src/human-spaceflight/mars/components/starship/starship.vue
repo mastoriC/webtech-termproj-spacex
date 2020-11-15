@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="background position-relative" :style="`background-image: url(${bg})`">
-            <div v-if="!this.$isMobile" class="section-inner mx-auto w-100 vh-100 position-relative">
+            <div v-if="!this.$isMobileMD" class="section-inner mx-auto w-100 vh-100 position-relative">
                 <div class="middle-right inner-half mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0">
                     <Info />
                 </div>
             </div>
         </div>
-        <div v-if="this.$isMobile" class="section-inner mx-auto position-relative my-4">
+        <div v-if="this.$isMobileMD" class="section-inner mx-auto position-relative">
             <div class="col-12 px-3 px-sm-4 px-md-5">
                 <Info />
             </div>
@@ -24,11 +24,10 @@
 .middle-right {
     position: absolute;
     top: 50%;
-    right: 0    ;
     transform: translateY(-50%);
     width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .background {
         background-size: cover;
         min-height: 100vh;
@@ -36,7 +35,7 @@
 }
 </style>
 <script>
-const Info = () => import('./reasonInfo.vue')
+const Info = () => import('./starshipInfo.vue')
 
 export default {
     components: {
@@ -44,7 +43,7 @@ export default {
     },
     computed: {
         bg() {
-            return `https://www.spacex.com/static/images/backgrounds/moon_why${(this.$isMobile)?"-mobile":""}.webp`
+            return `https://www.spacex.com/static/images/backgrounds/starship_vehicle${(this.$isMobileMD)?"-mobile":""}.webp`
         }
     }
 }

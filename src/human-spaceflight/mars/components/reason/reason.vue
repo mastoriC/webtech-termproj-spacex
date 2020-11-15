@@ -44,7 +44,7 @@ export default {
     },
     computed: {
         bg() {
-            return `https://www.spacex.com/static/images/backgrounds/moon_why${(this.$isMobile)?"-mobile":""}.webp`
+            return `https://www.spacex.com/static/images/backgrounds/mars_why${(this.$isMobile)?"-mobile":""}.webp`
         }
     }
 }
