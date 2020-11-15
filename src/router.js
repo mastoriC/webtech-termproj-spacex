@@ -9,6 +9,11 @@ const Dragon = () => import('./vehicles/dragon/dragon.vue')
 const Starship = () => import('./vehicles/starship/starship.vue')
 
 const HumanSpaceflight = () => import('./human-spaceflight/humanSpaceflight.vue')
+const HumanSpaceflightEarth = () => import('./human-spaceflight/earth/earth.vue')
+const HumanSpaceflightISS = () => import('./human-spaceflight/iss/iss.vue')
+const HumanSpaceflightMoon = () => import('./human-spaceflight/moon/moon.vue')
+const HumanSpaceflightMars = () => import('./human-spaceflight/mars/mars.vue')
+
 const Launches = () => import('./launches/launches.vue')
 const Careers = () => import('./careers/careers.vue')
 const Updates = () => import('./updates/updates.vue')
@@ -70,6 +75,38 @@ export const router = new Router({
             component: HumanSpaceflight,
             meta: {
                 title: "SpaceX - Human Spaceflight"
+            }
+        },
+        {
+            name: "humanSpaceflightEarth",
+            path: "/human-spaceflight/earth",
+            component: HumanSpaceflightEarth,
+            meta: {
+                title: "SpaceX - Missions: Earth"
+            }
+        },
+        {
+            name: "humanSpaceflightISS",
+            path: "/human-spaceflight/iss",
+            component: HumanSpaceflightISS,
+            meta: {
+                title: "SpaceX - Missions: ISS"
+            }
+        },
+        {
+            name: "humanSpaceflightMoon",
+            path: "/human-spaceflight/moon",
+            component: HumanSpaceflightMoon,
+            meta: {
+                title: "SpaceX - Missions: Moon"
+            }
+        },
+        {
+            name: "humanSpaceflightMars",
+            path: "/human-spaceflight/mars",
+            component: HumanSpaceflightMars,
+            meta: {
+                title: "SpaceX - Missions: Mars"
             }
         },
         {

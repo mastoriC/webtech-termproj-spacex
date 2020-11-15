@@ -1,62 +1,61 @@
 <template>
     <div>
-        <div class="overflow-hidden">
-            <div class="background vh-100" :style="`background-position: 50% ${bgPos};transform: scale(${Math.max(1, 1+multiplier/100)}) rotate3d(0, 0, 0.75, ${2 * multiplier}deg;`"></div>
+        <div class="background overflow-hidden vh-100" :style="`background-position: 50% ${bgPos}; transform: scale(${Math.max(1, 1+multiplier/100)})`">
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="dm-title font-weight-bold animate__animated animate__fadeInUp animate__fast">
-                    Dragon
+                    Earth Orbit
                 </div>
                 <div class="dm-subtitle font-weight-lighter animate__animated animate__fadeInUp animate__fast">
-                    Sending humans and cargo into space
+                    Experience Our Home Planet from over 300km Up
                 </div>
             </div>
         </div>
-        <Stat/>
-        <Information/>
-        <VDO/>
-        <HumanSpaceFlight/>
-        <Engine/>
-        <ParachuteSys/>
-        <StaticIMG/>
+        <Quote />
+        <Orbit />
+        <Dragon />
+        <Transport />
+        <VDO />
+        <TimeTable />
+        <MoreInfo />
     </div>
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/backgrounds/dragon_feature_mobile.webp");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/earth_feature_mobile.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media screen and (min-width: 992px) {
     .background {
-        background-image: url("https://www.spacex.com/static/images/backgrounds/dragon_feature.webp");
+        background-image: url("https://www.spacex.com/static/images/backgrounds/earth_feature.webp");
     }
 }
 .middle-center {
     position: absolute;
-    top: 40%;
+    top: 43.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 80%;
 }
 </style>
 <script>
-const Stat = () => import('./components/stat/stat.vue')
-const Information = () => import('./components/info/info.vue')
+const Quote = () => import('./components/quote/quote.vue')
+const Orbit = () => import('./components/orbit/orbit.vue')
+const Dragon = () => import('./components/dragon/dragon.vue')
+const Transport = () => import('./components/transport/transport.vue')
 const VDO = () => import('./components/vdo/vdo.vue')
-const HumanSpaceFlight = () => import('./components/humanSpaceFlight/humanSpaceFlight.vue')
-const Engine = () => import('./components/engine/engine.vue')
-const ParachuteSys = () => import('./components/parachuteSys/parachuteSys.vue')
-const StaticIMG = () => import('./components/staticImg/staticImg.vue')
+const TimeTable = () => import('./components/timeTable/timeTable.vue')
+const MoreInfo = () => import('./components/moreInfo/moreInfo.vue')
 
 export default {
     components: {
-        Stat,
-        Information,
+        Quote,
+        Orbit,
+        Dragon,
+        Transport,
         VDO,
-        HumanSpaceFlight,
-        Engine,
-        ParachuteSys,
-        StaticIMG
+        TimeTable,
+        MoreInfo
     },
     data() {
         return {
@@ -78,7 +77,7 @@ export default {
             if(window.scrollY < window.innerHeight) {
                 this.opacity = (height - window.scrollY) / height;
                 this.multiplier = (window.scrollY / 200);
-                this.bgPos = (window.scrollY / 4) + "px";
+                this.bgPos = (window.scrollY / 5) + "px";
             }
             this.scrollPos = window.scrollY;
         }

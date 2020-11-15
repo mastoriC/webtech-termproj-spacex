@@ -12,6 +12,7 @@ Vue.mixin({
     data() {
         return {
             isMobileSM: null,
+            isMobileMD: null,
             isMobile: null,
             isMobileXL: null
         }
@@ -26,6 +27,7 @@ Vue.mixin({
     methods: {
         handleResize() {
             this.isMobileSM = (window.innerWidth < 576)
+            this.isMobileMD = (window.innerWidth < 768)
             this.isMobile = (window.innerWidth < 992)
             this.isMobileXL = (window.innerWidth < 1200)
         }
@@ -33,6 +35,9 @@ Vue.mixin({
     computed: {
         $isMobileSM() {
             return this.isMobileSM
+        },
+        $isMobileMD() {
+            return this.isMobileMD
         },
         $isMobile() {
             return this.isMobile
