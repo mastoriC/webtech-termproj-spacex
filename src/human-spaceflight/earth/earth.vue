@@ -22,6 +22,7 @@
 <style scoped>
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/earth_feature_mobile.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }

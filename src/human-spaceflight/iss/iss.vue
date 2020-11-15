@@ -24,6 +24,7 @@
 <style scoped>
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/iss_feature-mobile.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }

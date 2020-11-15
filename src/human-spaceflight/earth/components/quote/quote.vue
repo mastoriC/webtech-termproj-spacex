@@ -13,8 +13,8 @@
 <style scoped>
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/earth_humans.webp");
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 70% 50%;
     background-size: cover;
 }
 @media screen and (min-width: 992px) {
