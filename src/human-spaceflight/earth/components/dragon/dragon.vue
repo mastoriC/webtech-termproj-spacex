@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="background position-relative" :style="`background-image: url(${bg})`">
-            <div v-if="!this.$isMobileMD" class="section-inner mx-auto w-100 vh-100 position-relative">
+            <div v-if="!this.$isMobile" class="section-inner mx-auto w-100 vh-100 position-relative">
                 <div class="middle-right inner-half mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0">
                     <Info />
                 </div>
             </div>
         </div>
-        <div v-if="this.$isMobileMD" class="section-inner mx-auto position-relative">
+        <div v-if="this.$isMobile" class="section-inner mx-auto position-relative">
             <div class="col-12 px-3 px-sm-4 px-md-5">
                 <Info />
             </div>
@@ -27,7 +27,7 @@
     transform: translateY(-50%);
     width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .background {
         background-size: cover;
         min-height: 100vh;

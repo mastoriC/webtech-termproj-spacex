@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="overflow-hidden">
-            <div class="background vh-100" :style="`background-position: 50% ${bgPos};transform: scale(${Math.max(1, 1+multiplier/100)}) rotate3d(0, 0, 0.75, ${2 * multiplier}deg;`"></div>
+            <div class="background overflow-hidden vh-100" :style="`transform: translate3d(0px, ${bgPos}, 0px) scale(${Math.max(1, 1+multiplier/100)}) rotate3d(0, 0, 0.75, ${2 * multiplier}deg;`"></div>
             <div class="text-uppercase middle-center text-center" :style="`opacity:${opacity}`">
                 <div class="dm-title font-weight-bold animate__animated animate__fadeInUp animate__fast">
                     Dragon
@@ -24,6 +24,7 @@
 .background {
     background-image: url("https://www.spacex.com/static/images/backgrounds/dragon_feature_mobile.webp");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 @media screen and (min-width: 992px) {
@@ -62,7 +63,7 @@ export default {
         return {
             opacity: 1,
             scrollPos: window.scrollY,
-            bgPos: "50%",
+            bgPos: "0px",
             multiplier: 0
         }
     },

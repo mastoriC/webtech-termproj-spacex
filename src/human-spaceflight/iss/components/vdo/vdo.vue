@@ -5,7 +5,7 @@
             <div class="section-inner mx-auto w-100 h-100 position-relative">
                 <div class="inner-half col-12 col-lg-4 bottom-right text-uppercase text-shadow mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0">
                     <div class="font-weight-light h5">Video</div>
-                    <div class="font-weight-bold line-height dm-title-2">Earth to Earth transportation</div>
+                    <div class="font-weight-bold line-height dm-title-2">Crew Demo-1 Mission</div>
                 </div>
             </div>
             <div class="play-area position-absolute" @click="pushTab">
@@ -18,7 +18,7 @@
 </template>
 <style scoped>
 .background {
-    background-image: url("https://www.spacex.com/static/images/backgrounds/earth_video-mobile.webp");
+    background-image: url("https://www.spacex.com/static/images/backgrounds/iss_video-mobile.webp");
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
@@ -27,7 +27,7 @@
 }
 @media screen and (min-width: 992px) {
     .background {
-        background-image: url("https://www.spacex.com/static/images/backgrounds/earth_video.webp");
+        background-image: url("https://www.spacex.com/static/images/backgrounds/iss_video.webp");
     }
     .bottom-right {
         right: 0;

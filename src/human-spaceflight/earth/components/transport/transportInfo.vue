@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5" :class="(this.$isMobileSM)?`px-4 py-5`:`middle-right mr-xl-5 px-5`">
+    <div class="middle-right inner-half mx-0 mx-sm-4 mx-md-5 px-3 px-sm-0">
         <div class="dm-title-2 line-height font-weight-bold mb-4">
             EARTH TO EARTH TRANSPORTATION
         </div>
