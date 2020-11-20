@@ -38,9 +38,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.btn-play {
-    transform: scale(3);
-}
 </style>
 <script>
 const VDOplate = () => import('./saocom1bVDOplate.vue')
