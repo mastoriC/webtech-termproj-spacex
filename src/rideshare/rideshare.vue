@@ -11,6 +11,7 @@
             </div>
         </div>
         <Description/>
+        <Reserve/>
         <Config/>
         <Falcon9/>
         <MoreInfo/>
@@ -19,7 +20,6 @@
 <style scoped>
 .background {
     background-repeat: no-repeat;
-    background-size: cover;
 }
 .middle-center {
     position: absolute;
@@ -30,12 +30,14 @@
 }
 </style>
 <script>
+const Reserve = () => import('./components/reserve/reserve.vue')
 const Description = () => import('./components/desc.vue')
 const Config = () => import('./components/config/config.vue')
 const Falcon9 = () => import('./components/falcon9/falcon9.vue')
 const MoreInfo = () => import('./components/moreInfo.vue')
 export default {
     components: {
+        Reserve,
         Description,
         Config,
         Falcon9,
