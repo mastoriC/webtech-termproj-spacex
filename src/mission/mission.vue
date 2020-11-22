@@ -8,6 +8,7 @@
         </div>
         <Stats/>
         <Multiplanetary/>
+        <Reusability/>
         <Facilities/>
         <MoreInfo/>
     </div>
@@ -37,12 +38,14 @@
 <script>
 const Stats = () => import('./components/stat/stat.vue')
 const Multiplanetary = () => import('./components/multiplanetary.vue')
+const Reusability = () => import('./components/reusability.vue')
 const Facilities = () => import('./components/facilities/facilities.vue')
 const MoreInfo = () => import('./components/moreInfo.vue')
 export default {
     components: {
         Stats,
         Multiplanetary,
+        Reusability,
         Facilities,
         MoreInfo
     }
