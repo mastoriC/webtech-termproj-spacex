@@ -15,6 +15,7 @@ const HumanSpaceflightMoon = () => import('./human-spaceflight/moon/moon.vue')
 const HumanSpaceflightMars = () => import('./human-spaceflight/mars/mars.vue')
 
 const Rideshare = () => import('./rideshare/rideshare.vue')
+const Mission = () => import('./mission/mission.vue')
 const Launches = () => import('./launches/launches.vue')
 const Careers = () => import('./careers/careers.vue')
 const Updates = () => import('./updates/updates.vue')
@@ -116,6 +117,14 @@ export const router = new Router({
             component: Rideshare,
             meta: {
                 title: "SpaceX - Rideshare"
+            }
+        },
+        {
+            name: "Mission",
+            path: "/mission",
+            component: Mission,
+            meta: {
+                title: "SpaceX - Mission"
             }
         },
         {
