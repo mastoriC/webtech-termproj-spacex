@@ -59,12 +59,12 @@ a, a:hover {
     max-width: 1400px;
 }
 @media screen and (min-width: 576px) {
-    .section-inner > .inner-half {
+    .section-inner .inner-half {
         max-width: 420px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .section-inner > .inner-half {
+    .section-inner .inner-half {
         max-width: 520px;
     }
 }
@@ -82,4 +82,11 @@ a, a:hover {
 }
 .object-fit {
     object-fit: cover;
+}
+.vh-100 {
+    min-height: 960px;
+}
+.vh-110 {
+    height: 110vh;
+    min-height: 1056px;
 }
