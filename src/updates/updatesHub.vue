@@ -2,7 +2,7 @@
     <div>
         <div class="background vh-100" :style="`background-image: url(${getBackground(log[0].img)})`">
             <div class="section-inner mx-auto">
-                <div class="position-relative vh-100 px-5">
+                <div class="position-relative vh-100 px-0 px-xl-5">
                     <div class="col-12 col-sm-7 col-md-6 col-xl-5 pr-5 bottom-dynamic text-shadow">
                         <div class="font-weight-light h5 mb-4">{{log[0].date}}</div>
                         <div class="font-weight-bold line-height dm-title-2">
@@ -19,7 +19,7 @@
         <div class="section-inner mx-auto">
             <div class="px-4">
                 <div class="mx- row">
-                    <div v-for="(article, index) in smallLog" :key="index" class="py-5" :class="(article.type==`big`)?`col-12`:`col-6`">
+                    <div v-for="(article, index) in smallLog" :key="index" class="py-5" :class="(article.type==`big`)?`col-12`:`col-12 col-xl-6`">
                         <div class="e3by2 mb-4">
                             <router-link tag="img" :to="article.link" class="img-cover w-100 h-100" :src="article.img"/>
                         </div>

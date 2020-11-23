@@ -1,5 +1,5 @@
 <template>
-    <div class="padding-top">
+    <div :class="(this.$route.path === '/updates/')?``:`padding-top`">
         <router-view/>
     </div>
 </template>
