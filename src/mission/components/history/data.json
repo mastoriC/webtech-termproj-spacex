@@ -1,0 +1,50 @@
+[
+    {
+        "title": "MAKING HISTORY",
+        "year": "",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-01.jpg",
+        "detail": "SpaceX has gained worldwide attention for a series of historic milestones. It is the only private company capable of returning a spacecraft from low-Earth orbit, and in 2012 our Dragon spacecraft became the first commercial spacecraft to deliver cargo to and from the International Space Station. Soon we will be the first private company to take humans there as well. Click through the timeline above to see some of our milestone accomplishments."
+    },
+    {
+        "title": "FALCON 1 MAKES HISTORY",
+        "year": "SEPTEMBER 2008",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-08.jpg",
+        "detail": "Falcon 1 becomes the first privately developed liquid fuel rocket to reach Earth orbit."
+    },
+    {
+        "title": "DRAGON REACHES THE SPACE STATION",
+        "year": "APRIL 2012",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-07.jpg",
+        "detail": "Dragon becomes the first private spacecraft in history to visit the space station."
+    },
+    {
+        "title": "FIRST LAND LANDING",
+        "year": "DECEMBER 2015",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-06.jpg",
+        "detail": "On December 21, 2015, the Falcon 9 rocket delivered 11 communications satellites to orbit, and the first stage returned and landed at Landing Zone 1 — the first-ever orbital class rocket landing."
+    },
+    {
+        "title": "DRONESHIP LANDING",
+        "year": "APRIL 2016",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-05.jpg",
+        "detail": "On April 8, 2016, the Falcon 9 rocket launched the Dragon spacecraft to the International Space Station, and the first stage returned and landed on the “Of Course I Still Love You” droneship."
+    },
+    {
+        "title": "FIRST REFLIGHT",
+        "year": "MARCH 2017",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-04.jpg",
+        "detail": "On March 30, 2017, SpaceX achieved the world’s first reflight of an orbital class rocket. Following delivery of the payload, the Falcon 9 first stage returned to Earth for the second time."
+    },
+    {
+        "title": "FALCON HEAVY FIRST FLIGHT",
+        "year": "FEBRUARY 2018",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-03.jpg",
+        "detail": "Falcon Heavy is the world’s most powerful operational rocket by a factor of two, capable of carrying large payloads to orbit and supporting missions as far as the Moon or Mars. On February 7, 2018, Falcon Heavy made its first launch to orbit, successfully landing 2 of its 3 boosters and launching its payload to space. "
+    },
+    {
+        "title": "CREW DRAGON DOCKS WITH ISS",
+        "year": "MARCH 2019",
+        "bg": "https://www.spacex.com/static/images/mission/mission-slider-02.jpg",
+        "detail": "Crew Dragon docked with the International Space Station on March 3 at 3:02 a.m. PST, becoming the first American spacecraft to autonomously dock with the orbiting laboratory."
+    }
+]

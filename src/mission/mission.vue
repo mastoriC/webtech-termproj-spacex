@@ -8,6 +8,7 @@
         </div>
         <Stats/>
         <Multiplanetary/>
+        <History/>
         <Reusability/>
         <Landing/>
         <Facilities/>
@@ -39,6 +40,7 @@
 <script>
 const Stats = () => import('./components/stat/stat.vue')
 const Multiplanetary = () => import('./components/multiplanetary.vue')
+const History = () => import('./components/history/info.vue')
 const Reusability = () => import('./components/reusability.vue')
 const Landing = () => import('./components/landing/landing.vue')
 const Facilities = () => import('./components/facilities/facilities.vue')
@@ -47,6 +49,7 @@ export default {
     components: {
         Stats,
         Multiplanetary,
+        History,
         Reusability,
         Landing,
         Facilities,
