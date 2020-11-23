@@ -1,0 +1,36 @@
+{
+    "desktop": [
+        [
+            "./assets/hsf.gif"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/careers-slider-02.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow3.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow4.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow5.jpg"
+        ]
+    ],
+    "mobile": [
+        [
+            "./assets/hsf.gif"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/careers-slider-02.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow3_mobile.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow4_mobile.jpg"
+        ],
+        [
+            "https://www.spacex.com/static/images/careers/Careers_slideshow5_mobile.jpg"
+        ]
+    ]
+}

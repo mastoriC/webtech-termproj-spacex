@@ -84,7 +84,7 @@ a, a:hover {
     object-fit: cover;
 }
 .vh-100 {
-    min-height: 960px;
+    min-height: 576px;
 }
 .vh-110 {
     height: 110vh;

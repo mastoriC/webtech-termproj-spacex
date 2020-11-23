@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="position-sticky">
         <div class="background vh-100 position-relative"
         :style="`background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">
             <div v-if="!this.$isMobile" class="section-inner mx-auto">

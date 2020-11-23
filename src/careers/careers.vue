@@ -12,6 +12,7 @@
                 </div>
             </div>
         </div>
+        <VideoCarousel/>
         <Life/>
         <Video/>
         <Inspiration/>
@@ -48,12 +49,14 @@
 }
 </style>
 <script>
+const VideoCarousel = () => import('./components/vdoCarousel/info.vue')
 const Life = () => import('./components/life/life.vue')
 const Video = () => import('./components/vdo/vdo.vue')
 const Inspiration = () => import('./components/inspiration.vue')
 const FindFuture = () => import('./components/findFuture.vue')
 export default {
     components: {
+        VideoCarousel,
         Life,
         Video,
         Inspiration,
