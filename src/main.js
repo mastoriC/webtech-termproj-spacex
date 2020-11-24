@@ -2,12 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import { router } from './router.js'
 
+import 'aos/dist/aos.css'
+
 import Button from '@/components/button.vue'
 import PlayArrow from '@/components/playArrow.vue'
 
-// Vue.prototype.$isMobileXL = function () { return (window.innerWidth < 1200) }
-// Vue.prototype.$isMobile = function () { return (window.innerWidth < 992) }
-// Vue.prototype.$isMobileSM = function () { return (window.innerWidth < 576) }
 Vue.mixin({
     data() {
         return {

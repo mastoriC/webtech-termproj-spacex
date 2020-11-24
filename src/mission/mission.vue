@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="background vh-100 position-relative">
+        <div class="background vh-100 position-relative" :style="`transform: translate3d(0px, ${bgPos}, 0px)`">
             <div class="elon-quote dm-text-elon line-height">
                 “You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.”
                 <div class="mt-3">-Elon Musk</div>
@@ -54,6 +54,31 @@ export default {
         Landing,
         Facilities,
         MoreInfo
+    },
+    data() {
+        return {
+            opacity: 1,
+            scrollPos: window.scrollY,
+            bgPos: "0px",
+            multiplier: 0
+        }
+    },
+    created() {
+        window.addEventListener("scroll", this.scrollHandler)
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.scrollHandler)
+    },
+    methods: {
+        scrollHandler(event) {
+            var height = window.innerHeight / 10;
+            if(window.scrollY < window.innerHeight) {
+                this.opacity = (height - window.scrollY) / height;
+                this.multiplier = (window.scrollY / 200);
+                this.bgPos = (window.scrollY / 4) + "px";
+            }
+            this.scrollPos = window.scrollY;
+        }
     }
 }
 </script>

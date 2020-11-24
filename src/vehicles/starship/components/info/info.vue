@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="position-relative" ref="bg" style="height: 200vh">
+        <div class="position-relative" ref="bg" style="height: 250vh">
             <div class="background background-full vh-100" :style="(this.opacity>=1)?`background-color: black`:`background-image: url(${bgFirst})`">
                 <div class="background-sec background-full vh-100"
                 :style="`opacity: ${opacity}; background-image: url(${selectBgSize[pageNumber-1][secNumber-1]})`">

@@ -19,7 +19,7 @@
         <div class="section-inner mx-auto">
             <div class="px-4">
                 <div class="mx- row">
-                    <div v-for="(article, index) in smallLog" :key="index" class="py-5" :class="(article.type==`big`)?`col-12`:`col-12 col-xl-6`">
+                    <div v-for="(article, index) in smallLog" :key="index" class="py-5" :class="`${(article.type==`big`)?`col-12`:`col-12 col-xl-6`}`" data-aos="fade-up" data-aos-duration="1000" :data-aos-delay="(article.type!=`big`)?(smallLog[Math.min(index+1, smallLog.length-1)].type!=`big`)?`200`:`300`:`200`">
                         <div class="e3by2 mb-4">
                             <router-link tag="img" :to="article.link" class="img-cover w-100 h-100" :src="article.img"/>
                         </div>

@@ -4,13 +4,13 @@
             <div class="row mx-4 mx-md-5">
                 <div class="col-12 col-sm-5 order-last order-sm-first my-5 my-sm-auto p-0">
                     <div class="col-12 col-sm-10 py-5 px-0" :class="(this.$isMobile)?``:`middle`">
-                        <div class="dm-title-2 line-height font-weight-bold mb-4">
+                        <div class="dm-title-2 line-height font-weight-bold mb-4" data-aos="fade-up" data-aos-duration="500">
                             CREW DRAGON DOCKING SIMULATOR
                         </div>
-                        <div class="mb-4 mb-lg-5">
+                        <div class="mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="500">
                             Crew Dragon is designed to autonomously dock and undock with the International Space Station. However, the crew can take manual control of the spacecraft if necessary.
                         </div>
-                        <btn type="a" newtab target="https://iss-sim.spacex.com/">Try It</btn>
+                        <btn type="a" newtab target="https://iss-sim.spacex.com/" data-aos="fade-up" data-aos-duration="500">Try It</btn>
                     </div>
                 </div>
                 <div class="col-12 col-sm order-first order-sm-last py-4 py-sm-5 px-0">

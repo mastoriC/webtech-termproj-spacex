@@ -4,8 +4,8 @@
         <div class="background vh-100 position-relative">
             <div class="section-inner mx-auto w-100 vh-100">
                 <div class="col-12 col-sm-6 col-xl-4 bottom-left text-shadow px-3 px-sm-5">
-                    <div class="font-weight-bold line-height dm-title-2 text-uppercase">Starship Takes Flight</div>
-                    <btn type="a" target="https://youtu.be/s1HA9LlFNM0" class="my-4" @click.native="pushTab">Replay</btn>
+                    <div class="font-weight-bold line-height dm-title-2 text-uppercase" data-aos="fade-up" data-aos-duration="500">Starship Takes Flight</div>
+                    <btn type="a" target="https://youtu.be/s1HA9LlFNM0" class="my-4" @click.native="pushTab" data-aos="fade-up" data-aos-duration="500">Replay</btn>
                 </div>
             </div>
         </div>
