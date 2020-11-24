@@ -13,7 +13,7 @@
                     </span>
                 </div>
                 <div class="img-box mx-auto">
-                    <img class="w-100" :src="require(`./assets/${getImg()}.png`)">
+                    <img class="w-100" :src="require(`./assets/${getImg()}.png`)" draggable="false">
                 </div>
             </div>
         </div>

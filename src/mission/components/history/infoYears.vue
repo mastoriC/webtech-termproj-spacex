@@ -43,6 +43,11 @@ export default {
             this.selected = index;
             this.$emit('selectedYear', index+2)
         }
+    },
+    watch: {
+        curSelected: function(newVal, oldVal) {
+            this.selected = newVal-2
+        }
     }
 }
 </script>
