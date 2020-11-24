@@ -4,12 +4,12 @@
             <div class="section-inner mx-auto">
                 <div class="position-relative vh-100 px-0 px-xl-5">
                     <div class="col-12 col-sm-7 col-md-6 col-xl-5 pr-5 bottom-dynamic text-shadow">
-                        <div class="font-weight-light h5 mb-4">{{log[0].date}}</div>
-                        <div class="font-weight-bold line-height dm-title-2">
+                        <div class="font-weight-light h5 mb-4" data-aos="fade-up" data-aos-duration="500">{{log[0].date}}</div>
+                        <div class="font-weight-bold line-height dm-title-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="25">
                         {{log[0].title}}
                         </div>
-                        <div class="my-4">{{log[0].shortDesc}}</div>
-                        <btn type="router-link" :target="`/updates/${log[0].link}`" class="my-4">
+                        <div class="my-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">{{log[0].shortDesc}}</div>
+                        <btn type="router-link" :target="`/updates/${log[0].link}`" class="my-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                             View Article
                         </btn>
                     </div>
