@@ -1,6 +1,6 @@
 <template>
-    <div class="background position-relative vh-100">
-        <div class="section-inner mx-auto w-100 vh-100 position-relative" v-if="!this.$isMobile">
+    <div class="background position-relative vh-110">
+        <div class="section-inner mx-auto w-100 vh-110 position-relative" v-if="!this.$isMobile">
             <Info/>
         </div>
         <Info v-if="this.$isMobile"/>
