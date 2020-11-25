@@ -102,9 +102,6 @@ export default {
             pageNumber: 1,
             secNumber: 1,
             titles: ["Overview", "First Stage", "Interstage", "Second Stage", "Payload"],
-            bgFirst: (this.$isMobile) ?
-            "https://www.spacex.com/static/images/falcon-heavy/mobile/WebsiteFHFairings_Lines_Mobile.webp":
-            "https://www.spacex.com/static/images/falcon-heavy/desktop/WebsiteFHFairings_Lines_Desktop.webp",
             bgs: JSON_bgs
         }
     },
@@ -156,11 +153,14 @@ export default {
     },
     computed: {
         selectBgSize() {
-            if (window.innerWidth >= 992) {
-                return this.bgs.desktop
-            } else {
+            if (this.$isMobile) {
                 return this.bgs.mobile
+            } else {
+                return this.bgs.desktop
             }
+        },
+        bgFirst() {
+            return `https://www.spacex.com/static/images/falcon-heavy/${(this.$isMobile)?"mobile":"desktop"}/WebsiteFHFairings_Lines_${(this.$isMobile)?"Mobile":"Desktop"}.webp`
         }
     }
 }

@@ -98,9 +98,6 @@ export default {
             pageNumber: 1,
             secNumber: 1,
             titles: ["Overview", "Starship", "Super Heavy", "Payload"],
-            bgFirst: (this.$isMobile) ?
-            "https://www.spacex.com/static/images/starship/mobile/WebsiteStarshipStack_Lines_Mobile.webp":
-            "https://www.spacex.com/static/images/starship/desktop/WebsiteStarshipStack_Lines_Desktop.webp",
             bgs: JSON_bgs
         }
     },
@@ -152,11 +149,14 @@ export default {
     },
     computed: {
         selectBgSize() {
-            if (window.innerWidth >= 992) {
-                return this.bgs.desktop
-            } else {
+            if (this.$isMobile) {
                 return this.bgs.mobile
+            } else {
+                return this.bgs.desktop
             }
+        },
+        bgFirst() {
+            return `https://www.spacex.com/static/images/starship/${(this.$isMobile)?"mobile":"desktop"}/WebsiteStarshipStack_Lines_${(this.$isMobile)?"Mobile":"Desktop"}.webp`
         }
     }
 }
